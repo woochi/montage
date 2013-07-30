@@ -1,0 +1,26 @@
+$button-color:        $gray-dark
+$button-color-hover:  $gray
+
+.button
+  +user-select(none)
+  +rhythm-borders(3px, 0.5)
+  display: inline-block
+  border-color: $button-color
+  cursor: pointer
+  color: $button-color
+
+  &:hover
+    border-color: $button-color-hover
+    color: $button-color-hover
+
+  #hero-header &
+    border-color: $gray-lighter
+
+    &:hover
+      border-color: $white
+
+.big-button
+  @extend .button
+  +adjust-font-size-to(16px)
+  +rhythm-borders(3px, 1)
+  text-transform: uppercase

@@ -1,0 +1,37 @@
+#hero-header
+  position: relative
+  height: 100%
+  min-height: rhythm(20)
+  max-height: rhythm(24)
+  background-color: $gray-dark
+  text-align: center
+  color: $white
+
+  &.index-hero
+    max-height: none
+    min-height: rhythm(28)
+
+.hero-title-group
+  clear: both
+  position: absolute
+  top: 40%
+  width: 90%
+
+  .index-hero &
+    +box-sizing(border-box)
+    top: 30%
+    padding: 0 20%
+
+.hero-title
+  text-transform: uppercase
+
+#signup-btn .arrow-icon
+  margin: -8px 0 -8px -5px
+  vertical-align: -5px
+
+#scroll-indicator
+  position: absolute
+  left: 50%
+  bottom: rhythm(1)
+  margin-left: rhythm(-3.5)
+  font-style: italic

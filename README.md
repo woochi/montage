@@ -1,4 +1,4 @@
-montage
+Montage
 =======
 
-WordPress layout for the Montaasi movie association.
+Montage is a WordPress layout for the web site of the Montaasi movie association.

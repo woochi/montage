@@ -1,0 +1,80 @@
+$base-font-size: 14px
+$base-line-height: 22px
+
+$base-font-family: "Proxima Nova", Helvetica, Arial, sans-serif
+$alt-font-family: Georgia, serif
+
+html
+  font-size: 100%
+
+body
+  font: normal normal normal #{$base-font-size}/#{$base-line-height} $base-font-family
+  color: $text-color
+
+// Headings
+//-------------------------------------
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  color: $heading-color
+
+  #hero-header &
+    color: $white
+
+h1
+  +adjust-font-size-to(42px, 2)
+  margin: rhythm(1, 42px) 0
+
+h2
+  +adjust-font-size-to(33px, 2)
+  margin: rhythm(1, 33px) 0
+
+h3
+  +adjust-font-size-to(26px, 1.5)
+  margin: rhythm(0.75, 26px) 0
+
+h4
+  +adjust-font-size-to(20px, 1.5)
+  margin: rhythm(0.75, 20px) 0
+
+h5
+  +adjust-font-size-to(16px, 1)
+  margin: rhythm(1, 16px) 0
+
+h6
+  +adjust-font-size-to(16px, 1)
+  margin: rhythm(1, 16px) 0
+  color: $text-color-alt
+
+// Paragraphs and quotes
+//-------------------------------------
+
+p
+  margin: rhythm(1) 0
+
+.small-print
+  +adjust-font-size-to(12px, 1)
+  margin: rhythm(1, 12px) 0
+
+  #hero-header &
+    color: $gray-light
+
+// Links
+//-------------------------------------
+
+a
+  color: $link-color
+  text-decoration: none
+  cursor: pointer
+
+  #hero-header &
+    color: $gray-lighter
+
+a:hover
+  color: $link-color-hover
+
+  #hero-header &
+    color: $white
+
+a:active
+  color: $link-color-active

@@ -1,0 +1,58 @@
+#main-nav
+  padding: rhythm(0.5) 0
+
+  > .container
+    padding: 0
+
+.nav-list
+  @extend %horizontal-list
+  display: none
+  float: right
+  margin: 0
+  padding: 0
+  white-space: nowrap
+
+  @media #{$tablet}
+    display: block
+
+%nav-item
+  +adjust-font-size-to(16px)
+  margin: rhythm(1, 16px) 0
+
+#logo
+  @extend %nav-item
+  float: left
+  padding: rhythm(0.5, 16px) 0
+  text-transform: uppercase
+
+#mobile-nav-link
+  @extend %nav-item
+  +rhythm-borders(1px, 0.5, 16px)
+  width: rhythm(1, 16px)
+  margin: rhythm(0.5, 16px) 0
+  float: right
+  text-align: center
+
+  @media #{$tablet}
+    display: none
+
+.main-nav-item
+  @extend %nav-item
+  margin: rhythm(1, 16px) 0 rhythm(1, 16px) rhythm(1, 16px)
+
+.main-nav-link
+  color: $gray-lighter
+
+  &:hover
+    color: $white
+
+.footer-nav-item
+  @extend %nav-item
+
+.separated-nav-item
+  padding-left: rhythm(1, 16px)
+  border-left: 1px solid gray
+
+#signup-link
+  margin: 0
+  +rhythm-borders(2px, 0.5, 16px)
