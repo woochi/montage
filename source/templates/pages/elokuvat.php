@@ -6,7 +6,7 @@ Template Name: Elokuvat
 
 <?php get_header(); ?>
 
-<header id="hero-header">
+<header id="hero-header" class="elokuvat-hero">
 
   <div class="container">
     <hgroup class="hero-title-group">
@@ -37,7 +37,7 @@ Template Name: Elokuvat
       </p>
     </div>
     <div class="container col-2">
-      <h3 class="row-title">Omaehtoista elokuvantekoa</h3>
+      <h4 class="row-title">Omaehtoista elokuvantekoa</h4>
       <p>
         Omaehtoisen elokuvanteon perinne on jatkunut Montaasissa läpi vuosien. Kerhossa on tehty satoja lyhytelokuvia, jotka kattavat laajan kirjon ilmaisutapoja abstraktista kokeellisuudesta kuvia kumartamattomaan anarkismiin asti. Vaikka kerhossa tehdyt elokuvat ovatkin tekijöidensä näköisiä, ne heijastavat kirkkaasti myös omien aikojensa henkeä. Esimerkiksi sellaiset alkuvuosien teokset kuin Jaakko Ylisen kaupunkisinfonia Kaupungin omakuva (1958) ja Risto Jarvan jazzahtava 9 runoa (1959) ovat 50-luvun avant-gardea siinä missä leikkisä nuorten aikuisten ihmissuhdekuvaus Mielo (1963) kanavoi ranskalaista uutta aaltoa. 70-luvun poliittisen aktivismin kultakauden töissä otetaan rohkeasti kantaa, esimerkiksi elokuvassa Mauton pila (1972) seksin ja moraalin suhteeseen ja elokuvassa Eespäin (1974) työväenluokan asemaan. Ja kun punk tuli Suomeen 1970-luvun lopulla, se lietsoi montaasilaisissa rajojarikkovaa tee-se-itse-henkeä: syntyi mm. uusi versio Tuntemattomasta sotilaasta (1978), dokumentti legendaarisesta nuorisokeskus Lepakosta (1979) ja opetuselokuva Kiljun valmistus ja käyttö (1982). Yhtä lailla useista 90-luvun Montaasi-elokuvista ei voi olla huomaamatta senaikaisen amerikkalaisen independent-elokuvan vaikutusta.
       </p>

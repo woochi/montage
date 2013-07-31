@@ -3,12 +3,6 @@ window.Collections = {}
 window.Views = {}
 window.Routers = {}
 
-scrollHero = (el, bannerHeight, bgHeight, elemOffset) ->
-  header = $("header.hero")
-  offset = document.body.scrollTop * 0.8
-  verticalPos = (bannerHeight - bgHeight) / 2 - offset + elemOffset
-  header.css "background-position", "50% #{verticalPos}px"
-
 $ ->
   ###
   header = $("header.hero")

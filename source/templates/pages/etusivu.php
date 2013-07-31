@@ -6,7 +6,25 @@ Template Name: Etuivu
 
 <?php get_header(); ?>
 
-<header id="hero-header">
+<?php
+
+    $args = array(
+      'numberposts' => 1,
+      'post_status' => 'publish',
+      'post_type' => 'post',
+      'suppress_filters' => true );
+
+    $args2 = array(
+      'numberposts' => 1,
+      'post_status' => 'publish',
+      'post_type' => 'event',
+      'suppress_filters' => true );
+
+    $recent_posts = wp_get_recent_posts( $args, $output = ARRAY_A );
+    $recent_events = wp_get_recent_posts( $args2, $output = ARRAY_A );
+?>
+
+<header id="hero-header" class="etusivu-hero">
 
   <div class="container">
     <hgroup class="hero-title-group">
@@ -17,6 +35,24 @@ Template Name: Etuivu
 </header>
 
 <section id="page">
+  <article id="news-banner" class="promo-row">
+    <div class="container col-1">
+      <div class="promo-half">
+        <i class="promo-icon icon-asterisk"></i>
+        <h5 class="promo-title">Montaasi tiedottaa</h5>
+        <?php foreach( $recent_posts as $post ){
+    		echo '<a href="' . get_permalink($post["ID"]) . '" title="Look '.esc_attr($post["post_title"]).'" >' .   $post["post_title"].'</a><p class="promo-content">'.$post["post_content"].'</p>';
+    	  }?>
+  	  </div>
+  	  <div class="promo-half">
+  	    <i class="promo-icon icon-calendar"></i>
+        <h5 class="promo-title">Kalenterissa seuraavaksi</h5>
+        <?php foreach( $recent_events as $event ){
+    		echo '<a href="' . get_permalink($event["ID"]) . '" title="Look '.esc_attr($event["post_title"]).'" >' .   $event["post_title"].'</a><p class="promo-content">' . $post["post_content"] . '</p>';
+    	  }?>
+  	  </div>
+    </div>
+  </article>
   <article class="column-row">
     <div class="container col-1 centered">
       <h3 class="row-title">Yli puoli vuosisataa elokuvakulttuuria</h3>

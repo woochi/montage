@@ -1,0 +1,49 @@
+%nowrap
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.promo-half
+  padding: rhythm(1) 5%
+  +trailing-border(1px, 1)
+  border-color: $gray-light
+
+  &:last-child
+    +box-shadow(none)
+    border-bottom: none
+
+  @media #{$tablet}
+    +box-shadow(1px 0 0 $gray-light)
+    float: left
+    width: 40%
+    border-bottom: none
+
+  a
+    @extend %nowrap
+
+.promo-title
+  @extend %nowrap
+  margin: 0
+  white-space: nowrap
+  text-transform: uppercase
+  color: $orange
+
+.promo-content
+  @extend %nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  margin: 0
+  white-space: nowrap
+
+.promo-icon
+  $icon-size: 20px
+  +adjust-font-size-to($icon-size, 1)
+  display: block
+  float: right
+  margin-left: rhythm(1, $icon-size)
+  height: rhythm(1, $icon-size)
+  width: rhythm(1, $icon-size)
+  padding: rhythm(1, $icon-size)
+  background: $gray-lighter
+  border-radius: 50%
+  text-align: center

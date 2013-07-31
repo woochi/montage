@@ -6,7 +6,7 @@ Template Name: Historiikki
 
 <?php get_header(); ?>
 
-<header id="hero-header">
+<header id="hero-header" class="historiikki-hero">
 
   <div class="container">
     <hgroup class="hero-title-group">

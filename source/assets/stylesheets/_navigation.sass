@@ -1,12 +1,10 @@
-#main-nav
-  padding: rhythm(0.5) 0
+#header-nav
 
   > .container
     padding: 0
 
 %nav-item
-  +adjust-font-size-to(16px)
-  margin: rhythm(1, 16px) 0
+  margin: rhythm(1) 0
 
 .nav-list
   @extend %horizontal-list
@@ -21,32 +19,47 @@
 
   > li
     @extend %nav-item
-    margin: rhythm(1, 16px) 0 rhythm(1, 16px) rhythm(1, 16px)
+    margin: rhythm(1, 14px) 0 rhythm(1, 14px) rhythm(1, 14px)
+
+    &:first-child
+      margin-left: 0
+
+  > li > a
+    padding: rhythm(0.25, 14px) 0
+
+  > .signup-item > a
+    @extend .button
+    display: inline
+    border: none !important
 
   .current_page_item a
     border-bottom: 2px solid $link-color
 
 #logo
   @extend %nav-item
+  +adjust-font-size-to(14px, 2, 42px)
   float: left
   text-transform: uppercase
   text-indent: -9999px
   padding: 0
-  margin: rhythm(0.5, 15px) 0
+  margin: 11px 0
 
   a
     display: block
-    width: rhythm(7.5, 16px)
-    height: rhythm(2, 16px)
+    width: rhythm(23, 14px)
+    height: rhythm(6, 14px)
     background: url(images/montaasi_logo.svg) center no-repeat
 
 #mobile-nav-link
   @extend %nav-item
-  +rhythm-borders(1px, 0.5, 16px)
-  width: rhythm(1, 16px)
-  margin: rhythm(0.5, 16px) 0
+  +rhythm-borders(1px, 0.5, 14px)
+  border: 1px solid $gray
+  width: rhythm(1)
+  margin: rhythm(0.75) 0
   float: right
   text-align: center
+  background: none
+  color: $gray
 
   @media #{$tablet}
     display: none
@@ -55,10 +68,5 @@
   @extend %nav-item
 
 .separated-nav-item
-  padding-left: rhythm(1, 16px)
+  padding-left: rhythm(1, 14px)
   border-left: 1px solid gray
-
-.signup-item a
-  @extend .button
-  display: inline
-  border: none !important

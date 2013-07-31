@@ -6,7 +6,7 @@ Template Name: Toiminta
 
 <?php get_header(); ?>
 
-<header id="hero-header">
+<header id="hero-header" class="toiminta-hero">
 
   <div class="container">
     <hgroup class="hero-title-group">
@@ -36,12 +36,10 @@ Template Name: Toiminta
   </article>
 
   <article class="column-row">
-    <div class="container col-1">
-      <i class="row-icon icon-film icon-2x"></i>
+    <div class="container col-2"></div>
+    <div class="container col-2">
       <h3 class="row-title">Elokuvatuotannot</h3>
-      <p>Elokuvien tekeminen kuuluu Montaasin ydintoimintaan. Kerhossa on tehty vuosien varrella satoja lyhytelokuvia.<Elokuvat-sivulla>.</p>
-
-      <p>Montaasi myös tukee jäsentensä omia elokuvatuotantoja <a href="/kalusto">kalustovuokrauksen</a> ja mahdollisen muun tuen muodossa. Mikäli olet tekemässä omaa elokuvaa ja olet halukas saamaan siihen Montaasin tukea, ota yhteyttä <a href="#main-footer">tuotantovastaavaan</a></p>
+      <p>Elokuvien tekeminen kuuluu Montaasin ydintoimintaan. Kerhossa on tehty vuosien varrella satoja lyhytelokuvia. Montaasi myös tukee jäsentensä omia elokuvatuotantoja <a href="/kalusto">kalustovuokrauksen</a> ja mahdollisen muun tuen muodossa. Mikäli olet tekemässä omaa elokuvaa ja olet halukas saamaan siihen Montaasin tukea, ota yhteyttä <a href="#main-footer">tuotantovastaavaan</a></p>
       <a class="button">Lue lisää Montaasin elokuvista</a>
     </div>
   </article>

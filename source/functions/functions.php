@@ -31,6 +31,17 @@ function montage_setup() {
 	add_theme_support( 'post-thumbnails' );
   register_nav_menu('header-menu',__( 'Header Menu' ));
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
+  register_post_type( 'event',
+		array(
+			'labels' => array(
+				'name' => __( 'Events' ),
+				'singular_name' => __( 'Event' )
+			),
+  		'public' => true,
+  		'has_archive' => true,
+  		'supports' => array('title', 'editor')
+		)
+	);
 }
 
 endif; // montage_setup

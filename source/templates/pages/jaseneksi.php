@@ -6,7 +6,7 @@ Template Name: Jäseneksi
 
 <?php get_header(); ?>
 
-<header id="hero-header">
+<header id="hero-header" class="jaseneksi-hero">
 
   <div class="container">
     <hgroup class="hero-title-group">
@@ -26,19 +26,7 @@ Template Name: Jäseneksi
   </article>
 
   <article class="column-row">
-    <div class="container col-2">
-      <h3 class="row-title">Liity jäseneksi</h3 class="row-title">
-      <p>
-        Montaasi on kaikille avoin yhdistys. Jäsenkausi on 1.9.–31.8. siten, että heinä- ja elokuussa jäseneksi tulleet saavat myös seuraavan kauden jäsenyyden samalla maksulla. Jäseneksi voit liittyä täyttämällä ohessa olevan lomakkeen ja suorittamalla jäsenmaksun Montaasin pankkitilille.
-      </p>
-      <p><strong>Saat maksuohjeet ilmoittamaasi sähköpostiosoitteeseen kun olet lähettänyt hakemuksesi.</strong></p>
-      <p>
-        Jäsenmaksun voi suorittaa myös käteisellä kerhohuoneella esimerkiksi
-        kerhoillan yhteydessä.
-      </p>
-      <h4>Jäsenmaksu vuodelle 2013: <strong>10€</strong></h4>
-    </div>
-    <div class="container col-2">
+    <div class="container col-3 push-1">
       <form id="join-form">
         <fieldset>
           <ol class="clean">
@@ -90,6 +78,18 @@ Template Name: Jäseneksi
           <input type="submit" value="Lähetä jäsenhakemus" class="button">
         </fieldset>
       </form>
+    </div>
+    <div id="join-description" class="container col-2">
+      <h3 class="row-title">Liity jäseneksi</h3 class="row-title">
+      <p>
+        Montaasi on kaikille avoin yhdistys. Jäsenkausi on 1.9.–31.8. siten, että heinä- ja elokuussa jäseneksi tulleet saavat myös seuraavan kauden jäsenyyden samalla maksulla. Jäseneksi voit liittyä täyttämällä ohessa olevan lomakkeen ja suorittamalla jäsenmaksun Montaasin pankkitilille.
+      </p>
+      <p><strong>Saat maksuohjeet ilmoittamaasi sähköpostiosoitteeseen kun olet lähettänyt hakemuksesi.</strong></p>
+      <p>
+        Jäsenmaksun voi suorittaa myös käteisellä kerhohuoneella esimerkiksi
+        kerhoillan yhteydessä.
+      </p>
+      <h4>Jäsenmaksu vuodelle 2013: <strong>10€</strong></h4>
     </div>
   </article>
 </section>

@@ -9,13 +9,13 @@
 	name="description">
 	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-	<script src="<?php bloginfo("template_directory"); ?>/javascripts/theme.js"></script>
 
 	<!-- WordPress -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<script src="<?php bloginfo("template_directory"); ?>/javascripts/theme.js"></script>
 	<?php wp_head(); ?>
 </head>
-<body id="<?php echo str_replace(" ", "_", strtolower(get_the_title())); ?>" <?php body_class(); ?>>
+<body id="<?php echo str_replace(" ", "_", strtolower(get_the_title())); ?>">
   <nav id="header-nav" class="clear">
     <div class="container">
       <h1 id="logo">
@@ -27,5 +27,6 @@
         'container_id' => '',
         'items_wrap' => '<ul class="nav-list">%3$s</ul>'
       )); ?>
+      <a id="mobile-nav-link" class="button"><i class="icon-reorder"></i></a>
     </div>
   </nav>

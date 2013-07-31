@@ -1,30 +1,22 @@
 <?php get_header(); ?>
-	<?php if ( have_posts() ) : ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<h1><?php the_title(); ?></h1>
-				<div>
-					<?php printf( __( 'by %s on', 'montage' ), get_the_author() ); ?> <?php the_date(); ?>
-				</div>
-				<div class="entry">
-					<?php if ( has_post_thumbnail() ) {
-						the_post_thumbnail();
-					} ?>
-					<?php the_content(); ?>
-					<?php edit_post_link( __( 'Edit this', 'montage' ), '<p>', '</p>' ); ?>
-					<?php wp_link_pages(); ?>
-				</div><!--end entry-->
-				<div class="post-footer clear">
-					<div class="tags">
-						<?php the_tags( __( 'Tags: ', 'montage' ), ', ', '' ); ?>
-					</div>
-					<div class="cats">
-						<?php printf( __( 'From: %s', 'montage' ), get_the_category_list( ', ' ) ); ?>
-					</div>
-				</div><!--end post footer-->
-			</div><!--end post-->
-		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
-		<?php comments_template( '', true ); ?>
-	<?php endif; ?>
-<?php get_sidebar(); ?>
+<header id="hero-header" class="post-hero">
+
+  <div class="container">
+    <hgroup class="hero-title-group">
+      <h1 class="hero-title"><?php the_title(); ?></h1>
+      <p class="single-post-meta">
+        <span class="single-post-author"><?php get_the_author(); ?></span> - 
+		    <time><?php the_time( __( 'd/m/Y', 'montage' ) ); ?></time>
+      </p>
+    </hgroup>
+  </div>
+  
+</header>
+
+<section id="page" class="column-row">
+  <div class="container col-1">
+    <?php get_template_part( 'single_post' ); ?>
+  </div>
+</section>
+
 <?php get_footer(); ?>
