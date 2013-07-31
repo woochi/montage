@@ -193,7 +193,7 @@ $equipment = array(
 <section id="page">
   <article class="column-row">
     <div class="container col-1 centered">
-      <h2 class="row-title">Miten vuokraan kalustoa?</h2>
+      <h3 class="row-title">Miten vuokraan kalustoa?</h3>
       <p>Montaasi tarjoaa jäsentensä käyttöön monipuolisen kalustovalikoiman. Jäsenet voivat käyttää kerhohuoneella olevaa kalustoa (projektorit, editointitietokone, leikkauspöydät yms.) maksutta ja vuokrata kameroita, valo- ja äänikalustoa sekä muuta tarpeistoa edullisesti.</p>
 
       <p>Kaluston varaustilanteen voit tarkistaa <a href="#varauskalenteri">varauskalenterista</a>. Vuokrausasioissa ota yhteyttä kalustovastaava Eero Laurilaan, sähköposti eero.laurila(at)aalto.fi. Ennen vuokrausta tutustu myös vuokrauksen tarkempiin sääntöihin.</p>
@@ -208,5 +208,4 @@ $equipment = array(
     </div>
   </article>
 </section>
-
 <?php get_footer(); ?>

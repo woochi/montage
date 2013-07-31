@@ -1,5 +1,6 @@
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
+	  <?php get_template_part( 'loop_item' ); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="post-header">
 				<h2 class="post-title">

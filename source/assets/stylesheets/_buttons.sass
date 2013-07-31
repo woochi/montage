@@ -1,18 +1,20 @@
-$button-color:        $gray-dark
-$button-color-hover:  $gray
+$button-background:   $orange
+$button-color:        $white
+$button-color-hover:  $white
 
 .button
   +user-select(none)
-  +rhythm-borders(2px, 0.5)
   display: inline-block
-  background-color: transparent
-  border-color: $button-color
+  padding: rhythm(0.5)
+  background-color: $button-background
+  border: none
   cursor: pointer
   color: $button-color
   text-transform: uppercase
+  border-radius: 2px
 
   &:hover
-    border-color: $button-color-hover
+    background-color: darken($button-background, 5%)
     color: $button-color-hover
 
   #hero-header &

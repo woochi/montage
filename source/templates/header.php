@@ -1,9 +1,15 @@
 <html <?php language_attributes( 'html' ) ?>>
 <head>
-	<title><?php wp_title(); ?></title>
+	<title>Montaasi<?php wp_title(" - "); ?></title>
 	<!-- Basic Meta Data -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="Elokuvakerho Montaasi on Aalto-yliopiston yliopilaskunnan alainen yhdistys elokuvien ystäville.
+	Olemme tarjonneet jäsenillemme elokuvaviihdettä ja -koulutusta vuodesta 1957 asti."
+	name="description">
+	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script src="<?php bloginfo("template_directory"); ?>/javascripts/theme.js"></script>
 
 	<!-- WordPress -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
