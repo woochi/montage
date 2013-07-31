@@ -1,15 +1,28 @@
 #hero-header
+  +box-shadow(0 1px 0 rgba($gray, 0.5) inset, 0 -1px 0 rgba($gray, 0.5) inset)
   position: relative
   height: 100%
   min-height: rhythm(20)
   max-height: rhythm(24)
-  background-color: $gray-dark
+  background: $gray-dark url(images/hero_etusivu.jpg) center no-repeat
+  background-size: cover
   text-align: center
   color: $white
 
-  &.index-hero
-    max-height: none
-    min-height: rhythm(28)
+  #etusivu &
+    background-image: url(images/hero_etusivu.png)
+  #elokuvat &
+    background-image: url(images/hero_elokuvat.png)
+  #ajankohtaista &
+    background-image: url(images/hero_ajankohtaista.png)
+  #jäseneksi &
+    background-image: url(images/hero_jaseneksi.png)
+  #toiminta &
+    background-image: url(images/hero_toiminta.png)
+  #kalusto &
+    background-image: url(images/hero_kalusto_2.png)
+  #historiikki &
+    background-image: url(images/hero_historiikki.png)
 
 .hero-title-group
   clear: both
@@ -23,7 +36,11 @@
     padding: 0 20%
 
 .hero-title
+  display: inline-block
+  padding: rhythm(0.5, 42px)
+  background-color: rgba($black, 0.5)
   text-transform: uppercase
+  letter-spacing: 2px
 
 #signup-btn .arrow-icon
   margin: -8px 0 -8px -5px

@@ -3,11 +3,13 @@ $button-color-hover:  $gray
 
 .button
   +user-select(none)
-  +rhythm-borders(3px, 0.5)
+  +rhythm-borders(2px, 0.5)
   display: inline-block
+  background-color: transparent
   border-color: $button-color
   cursor: pointer
   color: $button-color
+  text-transform: uppercase
 
   &:hover
     border-color: $button-color-hover

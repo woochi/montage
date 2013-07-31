@@ -7,7 +7,7 @@ $alt-font-family: Georgia, serif
 html
   font-size: 100%
 
-body
+body, input, button, select
   font: normal normal normal #{$base-font-size}/#{$base-line-height} $base-font-family
   color: $text-color
 
@@ -52,6 +52,10 @@ h6
 p
   margin: rhythm(1) 0
 
+.lead
+  +adjust-font-size-to(16px, 1.5)
+  margin: 0
+
 .small-print
   +adjust-font-size-to(12px, 1)
   margin: rhythm(1, 12px) 0
@@ -69,6 +73,9 @@ a
 
   #hero-header &
     color: $gray-lighter
+
+  p &
+    border-bottom: 1px solid $link-color
 
 a:hover
   color: $link-color-hover

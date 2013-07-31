@@ -4,6 +4,10 @@
   > .container
     padding: 0
 
+%nav-item
+  +adjust-font-size-to(16px)
+  margin: rhythm(1, 16px) 0
+
 .nav-list
   @extend %horizontal-list
   display: none
@@ -15,15 +19,26 @@
   @media #{$tablet}
     display: block
 
-%nav-item
-  +adjust-font-size-to(16px)
-  margin: rhythm(1, 16px) 0
+  > li
+    @extend %nav-item
+    margin: rhythm(1, 16px) 0 rhythm(1, 16px) rhythm(1, 16px)
+
+  .current_page_item a
+    border-bottom: 2px solid $link-color
 
 #logo
   @extend %nav-item
   float: left
-  padding: rhythm(0.5, 16px) 0
   text-transform: uppercase
+  text-indent: -9999px
+  padding: 0
+  margin: rhythm(0.5, 15px) 0
+
+  a
+    display: block
+    width: rhythm(7.5, 16px)
+    height: rhythm(2, 16px)
+    background: url(images/montaasi_logo.svg) center no-repeat
 
 #mobile-nav-link
   @extend %nav-item
@@ -35,16 +50,6 @@
 
   @media #{$tablet}
     display: none
-
-.main-nav-item
-  @extend %nav-item
-  margin: rhythm(1, 16px) 0 rhythm(1, 16px) rhythm(1, 16px)
-
-.main-nav-link
-  color: $gray-lighter
-
-  &:hover
-    color: $white
 
 .footer-nav-item
   @extend %nav-item
