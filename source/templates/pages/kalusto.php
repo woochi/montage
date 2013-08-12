@@ -191,8 +191,52 @@ $equipment = array(
 </header>
 
 <section id="page">
+
   <article class="column-row">
-    <div class="container col-1 centered">
+    <div id="filter-col" class="container col-3">
+      <ul id="equipment-filters">
+        <li class="filter">
+          <a rel="camera">
+            <i class="filter-icon icon-camera icon-2x icon-fixed-width"></i>
+            <span class="filter-title">Kamerat</span>
+            <span class="filter-size">8 tuotetta</span>
+          </a></li>
+        <li class="filter">
+          <a rel="audio">
+            <i class="filter-icon icon-volume-up icon-2x icon-fixed-width"></i>
+            <span class="filter-title">Ääni</span>
+            <span class="filter-size">8 tuotetta</span>
+          </a></li>
+        <li class="filter">
+          <a rel="projector">
+            <i class="filter-icon icon-facetime-video icon-2x icon-fixed-width"></i>
+            <span class="filter-title">Projektorit</span>
+            <span class="filter-size">8 tuotetta</span>
+          </a></li>
+        <li class="filter">
+          <a rel="light">
+            <i class="filter-icon icon-lightbulb icon-2x icon-fixed-width"></i>
+            <span class="filter-title">Valaisimet</span>
+            <span class="filter-size">8 tuotetta</span>
+          </a></li>
+      </ul>
+    </div>
+    <div id="table-col" class="container col-3">
+      <table id="equipment-table">
+        <tr>
+          <th class="col-name">Varuste</th>
+          <th class="col-name">Hinta 1</th>
+          <th class="col-name">Hinta 2</th>
+        </tr>
+        <?php foreach ($equipment as $item) {
+            echo '<tr class="item" rel="'.$item["category"].'"><td><h5 class="item-name">'.$item["manufacturer"].' '.$item["model"].'</h5><p class="item-description">'.$item["description"].'</p></td><td class="price-1">'.$item["price"].'</td><td class="price-2">'.$item["price2"].'</td></tr>';
+        }?>
+      </table>
+    </div>
+  </article>
+
+  <article class="column-row">
+    <div class="container col-2">
       <h3 class="row-title">Miten vuokraan kalustoa?</h3>
       <p>Montaasi tarjoaa jäsentensä käyttöön monipuolisen kalustovalikoiman. Jäsenet voivat käyttää kerhohuoneella olevaa kalustoa (projektorit, editointitietokone, leikkauspöydät yms.) maksutta ja vuokrata kameroita, valo- ja äänikalustoa sekä muuta tarpeistoa edullisesti.</p>
 
@@ -206,10 +250,7 @@ $equipment = array(
         Lataa kalustonvuokraussopimus
       </a>
     </div>
-  </article>
-
-  <article class="column-row">
-    <div class="container col-1">
+    <div class="container col-2">
       <h3 class="row-title">Vuokraushinnasto</h3 class="row-title">
       <p>
         Kalustoa vuokratessa valittavana on kaksi eri hinnoittelumallia, joista Hinta 1 koostuu pelkästä vuorokausivuokrasta ja on edullisin satunnaiseen tarpeeseen, kun taas Hinta 2 koostuu vuoden voimassa olevasta 50 € kalustomaksusta ja halvemmista vuorokausivuokrista, ja soveltuu suurempiin tuotantoihin.

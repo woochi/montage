@@ -12,7 +12,6 @@
 
 	<!-- WordPress -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<script src="<?php bloginfo("template_directory"); ?>/javascripts/theme.js"></script>
 	<?php wp_head(); ?>
 </head>
 <body id="<?php echo str_replace(" ", "_", strtolower(get_the_title())); ?>">

@@ -16,6 +16,7 @@
   </nav>
   </div>
 </footer><!--end footer-->
+<script src="<?php bloginfo("template_directory"); ?>/javascripts/theme.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

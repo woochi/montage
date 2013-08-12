@@ -1,10 +1,2 @@
-#= require zepto
-#= require underscore
-#= require backbone
-
-#= require boot
-#= require "mobile_navigation"
-#= require_tree "./models"
-#= require_tree "./collections"
-#= require_tree "./views"
-#= require_tree "./routers"
+#= require libs/zepto
+#= require equipment

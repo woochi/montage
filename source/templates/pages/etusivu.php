@@ -54,7 +54,7 @@ Template Name: Etuivu
     </div>
   </article>
   <article class="column-row">
-    <div class="container col-1 centered">
+    <div class="container col-1">
       <h3 class="row-title">Yli puoli vuosisataa elokuvakulttuuria</h3>
       <p> Elokuvakerho Montaasi on Aalto-yliopiston ylioppilaskunnan yhteydessä toimiva elokuvatekniikasta ja -taiteesta kiinnostuneiden opiskelijoiden yhdistys. Montaasi järjestää elokuvan tekemistä opettavia kursseja, elokuvanäytöksiä, ekskursioita elokuva-alan kohteisiin sekä muita tapahtumia. Kerho tarjoaa jäsenilleen opastusta, kontakteja ja kalustoa oman elokuvan toteuttamiseen.
 
