@@ -15,17 +15,26 @@
 	<?php wp_head(); ?>
 </head>
 <body id="<?php echo str_replace(" ", "_", strtolower(get_the_title())); ?>">
-  <nav id="header-nav" class="clear">
-    <div class="container">
-      <h1 id="logo">
-        <a href="<?php echo home_url(); ?>">Montaasi</a>
-      </h1>
-      <?php wp_nav_menu(array(
-        'menu' => 'header-menu',
-        'container' => '',
-        'container_id' => '',
-        'items_wrap' => '<ul class="nav-list">%3$s</ul>'
-      )); ?>
-      <a id="mobile-nav-link" class="button"><i class="icon-reorder"></i></a>
-    </div>
-  </nav>
+  <div id="sidebar">
+    <?php wp_nav_menu(array(
+      'menu' => 'mobile-menu',
+      'container' => '',
+      'container_id' => '',
+      'items_wrap' => '<ul class="nav-list">%3$s</ul>'
+    )); ?>
+  </div>
+  <section id="page">
+    <nav id="header-nav" class="clear">
+      <div class="container">
+        <h1 id="logo">
+          <a href="<?php echo home_url(); ?>">Montaasi</a>
+        </h1>
+        <?php wp_nav_menu(array(
+          'menu' => 'header-menu',
+          'container' => '',
+          'container_id' => '',
+          'items_wrap' => '<ul class="nav-list">%3$s</ul>'
+        )); ?>
+        <a id="mobile-nav-button" class="button"><i class="icon-reorder"></i></a>
+      </div>
+    </nav>

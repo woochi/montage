@@ -1,8 +1,18 @@
+.single-post-hero
+  text-align: left !important
+
 .single-post
-  @extend .post
+  @extend .featurette
+  border: none
+
+.single-post-meta
+  display: inline-block
+  margin: rhythm(0.5) 0
+  padding: 0 rhythm(0.5)
+  background: rgba($black, 0.7)
 
 .single-post-title
-  @extend .post-title
-
-.single-post-header
-  @extend .post-header
+  display: inline-block
+  margin: rhythm(3) 0 0
+  padding: 0 rhythm(0.5, 44px)
+  background: rgba($black, 0.7)

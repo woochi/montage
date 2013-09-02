@@ -1,3 +1,5 @@
 .forge
 .sass-cache
 .DS_Store
+build
+package

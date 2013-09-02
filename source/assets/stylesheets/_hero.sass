@@ -1,13 +1,14 @@
 #hero-header
   +box-shadow(0 1px 0 rgba($gray, 0.5) inset, 0 -1px 0 rgba($gray, 0.5) inset)
   position: relative
-  height: 100%
-  min-height: rhythm(20)
-  max-height: rhythm(24)
-  background: $gray-dark url(images/hero_etusivu.jpg) center no-repeat
+  height: rhythm(10)
+  background: $gray-dark url(images/hero_etusivu.png) center no-repeat
   background-size: cover
   text-align: center
   color: $white
+
+  .container
+    height: 100%
 
   &.etusivu-hero
     background-image: url(images/hero_etusivu.png)
@@ -16,7 +17,7 @@
   &.jaseneksi-hero
     background-image: url(images/hero_jaseneksi.png)
   &.toiminta-hero
-    background-image: url(images/hero_toiminta.png)
+    background-image: url(images/hero_toiminta.jpg)
   &.kalusto-hero
     background-image: url(images/hero_kalusto_2.png)
   &.historiikki-hero
@@ -27,8 +28,8 @@
 .hero-title-group
   clear: both
   position: absolute
-  top: 40%
-  width: 90%
+  top: rhythm(7)
+  width: 100%
 
   .index-hero &
     +box-sizing(border-box)
@@ -37,10 +38,11 @@
 
 .hero-title
   display: inline-block
-  padding: rhythm(0.5, 42px)
-  background-color: rgba($black, 0.5)
+  padding: 0 rhythm(0.5, 42px)
+  background-color: rgba($black, 0.7)
   text-transform: uppercase
   letter-spacing: 2px
+  font-weight: 700
 
 #signup-btn .arrow-icon
   margin: -8px 0 -8px -5px
@@ -52,3 +54,13 @@
   bottom: rhythm(1)
   margin-left: rhythm(-3.5)
   font-style: italic
+
+@media #{$medium-screen}
+
+  #hero-header
+    height: rhythm(10)
+
+@media #{$tablet}
+
+  #hero-header
+    height: rhythm(14)

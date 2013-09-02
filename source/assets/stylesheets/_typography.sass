@@ -1,5 +1,5 @@
-$base-font-size: 14px
-$base-line-height: 22px
+$base-font-size: 15px
+$base-line-height: 25px
 
 $base-font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 $alt-font-family: Georgia, serif
@@ -15,34 +15,34 @@ body, input, button, select
 //-------------------------------------
 
 h1, h2, h3, h4, h5, h6
-  font-weight: normal
+  font-weight: 500
   color: $heading-color
 
   #hero-header &
     color: $white
 
 h1
-  +adjust-font-size-to(42px, 2)
-  margin: rhythm(1, 42px) 0
+  +adjust-font-size-to(44px, 3)
+  margin: rhythm(0.75, 44px) 0
 
 h2
-  +adjust-font-size-to(33px, 2)
-  margin: rhythm(1, 33px) 0
+  +adjust-font-size-to(36px, 2)
+  margin: rhythm(1, 36px) 0
 
 h3
-  +adjust-font-size-to(26px, 1.5)
-  margin: rhythm(0.75, 26px) 0
+  +adjust-font-size-to(30px, 2)
+  margin: rhythm(0.5, 30px) 0
 
 h4
-  +adjust-font-size-to(20px, 1.5)
-  margin: rhythm(0.75, 20px) 0
+  +adjust-font-size-to(22px, 2)
+  margin: rhythm(0.5, 22px) 0
 
 h5
-  +adjust-font-size-to(16px, 1)
+  +adjust-font-size-to(18px, 1)
   margin: rhythm(1, 16px) 0
 
 h6
-  +adjust-font-size-to(16px, 1)
+  +adjust-font-size-to(18px, 1)
   margin: rhythm(1, 16px) 0
   color: $text-color-alt
 
@@ -53,15 +53,15 @@ p
   margin: rhythm(1) 0
 
 .lead
-  +adjust-font-size-to(16px, 1.5)
-  margin: 0
+  +adjust-font-size-to(17px, 1.5)
+  margin: rhythm(1, 17px) 0
 
 .small-print
   +adjust-font-size-to(12px, 1)
   margin: rhythm(1, 12px) 0
 
   #hero-header &
-    color: $gray-light
+    color: $gray-lighter
 
 // Links
 //-------------------------------------
@@ -71,17 +71,48 @@ a
   text-decoration: none
   cursor: pointer
 
-  #hero-header &
-    color: $gray-lighter
-
   p &
     border-bottom: 1px solid $link-color
 
 a:hover
   color: $link-color-hover
-
-  #hero-header &
-    color: $white
+  border-color: $link-color-hover
 
 a:active
   color: $link-color-active
+
+.white-link
+  color: rgba($white, 0.75)
+  border-color: rgba($white, 0.75)
+
+  &:hover
+    color: $white
+    border-color: $white
+
+// Quotes
+//-------------------------------------
+
+blockquote
+  margin: rhythm(1) 0
+
+// Horizontal lines
+//-------------------------------------
+
+hr
+  height: 0
+  margin: rhythm(2) auto
+  border: none
+  border-top: 1px solid $gray
+
+.short-line
+  width: rhythm(2)
+  margin: -1px 0
+  border-top: 2px solid $gray-darker
+
+.centered-short-line
+  @extend .short-line
+  margin-left: auto
+  margin-right: auto
+
+.nowrap
+  white-space: nowrap

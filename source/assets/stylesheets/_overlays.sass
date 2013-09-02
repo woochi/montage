@@ -1,0 +1,49 @@
+%overlay
+  position: fixed
+  left: 0
+  top: 0
+
+.overlay-mask
+  @extend %overlay
+  z-index: $zindex-modal-backdrop
+  width: 100%
+  height: 100%
+  background-color: rgba($black, 0.8)
+
+  &.in
+    +animation(fade-in 0.2s both)
+
+  &.out
+    +animation(fade-out 0.2s both)
+
+.overlay-container
+  @extend %overlay
+  +transform(translateX(-50%) translateY(-50%))
+  margin: rhythm(1) 0
+  left: 50%
+  top: 50%
+  width: 75%
+  max-width: 640px
+  min-width: 320px
+  -webkit-backface-visibility: hidden
+  visibility: hidden
+  z-index: $zindex-modal
+  max-height: 100%
+  overflow-y: scroll
+
+  &.in
+    visibility: visible
+
+  &.out
+    visibility: hidden
+
+.overlay-content
+  +transition(all 0.3s)
+  +transform(scale(0.7))
+  opacity: 0
+  max-height: 100%
+  overflow-y: scroll
+
+  .in &
+    +transform(scale(1))
+    opacity: 1

@@ -5,13 +5,33 @@
   +clearfix()
 
 .hidden
-  display: none
+  display: none !important
+  visibility: hidden !important
+  height: 0
+  width: 0
 
 // Responsive helpers
 //-------------------------------------
 
-$mobile: "screen and (max-width: 480px)"
 $tablet: "screen and (min-width: 768px)"
-$tablet-down: "screen and (max-width: 768px)"
 $medium-screen: "screen and (min-width: 992px)"
-$wide-screen: "screen and (min-width: 1200px)"
+$large-screen: "screen and (min-width: 1240px)"
+
+// Keyframe mixin
+//-------------------------------------
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=animation($animation...)
+  -o-animation: $animation
+  -moz-animation: $animation
+  -webkit-animation: $animation
+  animation: $animation

@@ -1,0 +1,94 @@
+.featurette
+  overflow: hidden
+  padding: rhythm(2) 0
+  +trailing-border(1px, 2)
+  border-color: #f2f4f5
+  background-color: $white
+
+.tinted-featurette
+  @extend .featurette
+  background-color: #f2f4f5
+
+.row
+  @extend .clear
+  padding: rhythm(1) 0
+
+  &:first-child
+    padding-top: 0
+
+  &:last-child
+    padding-bottom: 0
+
+.container
+  position: relative
+  margin: 0 auto
+  padding: 0 rhythm(1)
+
+.center
+  text-align: center
+
+%column
+  +box-sizing(border-box)
+  padding: rhythm(1) 0
+  min-height: 1px
+
+  &:first-child
+    padding-top: 0
+
+  &:last-child
+    padding-bottom: 0
+
+@for $i from 1 through 12
+  .col-#{$i}
+    @extend %column
+
+@media #{$tablet}
+
+  .featurette
+    padding: rhythm(3) 0
+
+  .row
+    margin: 0 rhythm(-0.5)
+
+  .container
+    max-width: 728px
+    padding: 0
+
+  %column
+    float: left
+    padding: 0 rhythm(0.5)
+
+  @for $i from 1 through 12
+    .col-#{$i}
+      @extend %column
+      width: percentage($i / 12)
+
+    .push-#{$i}
+      margin-left: percentage($i / 12)
+
+    .pull-#{$i}
+      margin-right: percentage($i / 12)
+
+@media #{$medium-screen}
+
+  .row
+    margin: 0 rhythm(-0.75)
+
+  .container
+    max-width: 940px
+    padding: 0
+
+  %column
+    padding: 0 rhythm(0.75)
+
+@media #{$large-screen}
+
+  .row
+    margin: 0 rhythm(-1)
+
+  .container
+    max-width: 1180px
+    padding: 0
+
+  %column
+    padding: 0 rhythm(1)

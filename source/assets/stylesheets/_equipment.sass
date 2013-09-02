@@ -4,23 +4,15 @@
 #ohjeet
   display: none
 
-#filter-col
-  margin-bottom: 0
-
-#table-col
-  width: 100%
-
 #equipment-filters
-  width: 100%
-  list-style: none
-  float: left
   margin: 0
   padding: 0
+  background-color: $gray-lighter
 
 .filter
   float: left
   width: 25%
-  margin-bottom: rhythm(0.5)
+  text-align: center
 
   &:first-child
     margin-top: 0
@@ -31,9 +23,8 @@
     text-align: center
 
     &.current, &:hover
-      +rhythm-borders(1px, 0.5)
-      background-color: $gray-lighter
-      border-color: $gray-light
+      color: $white
+      background-color: $primary-color
 
 .filter-title, .filter-size
   display: none
@@ -68,19 +59,26 @@
 .item-description
   margin: 0
 
+#saannot
+  padding: rhythm(1)
+  background-color: $white
+
 @media #{$tablet}
 
-  #table-col
-    width: 65%
+  #equipment-filters
+    margin: 0 0 rhythm(1)
+
+  .filter
+    text-align: left
 
   .filter-icon
     float: left
     margin-right: rhythm(0.5)
 
-  .filter
-    width: 100%
-    margin: rhythm(0.5) 0
-
   .filter-title, .filter-size
     display: block
     text-align: left
+
+@media #{$medium-screen}
+  #saannot
+    padding: rhythm(1)

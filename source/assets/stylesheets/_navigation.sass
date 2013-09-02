@@ -1,8 +1,3 @@
-#header-nav
-
-  > .container
-    padding: 0
-
 %nav-item
   margin: rhythm(1) 0
 
@@ -49,21 +44,23 @@
     display: block
     width: rhythm(23, 14px)
     height: rhythm(6, 14px)
-    background: url(images/montaasi_logo.svg) center no-repeat
+    background: url(images/montaasi_logo.svg) 55% center no-repeat
 
-#mobile-nav-link
+#mobile-nav-button
   @extend %nav-item
   +rhythm-borders(1px, 0.5, 14px)
-  border: 1px solid $gray
+  border: 1px solid $link-color
+  border-radius: 2px
   width: rhythm(1)
   margin: rhythm(0.75) 0
   float: right
   text-align: center
   background: none
-  color: $gray
+  color: $link-color
 
-  @media #{$tablet}
-    display: none
+  &:hover, &.active
+    color: $link-color-hover
+    border-color: $link-color-hover
 
 .footer-nav-item
   @extend %nav-item
@@ -71,3 +68,8 @@
 .separated-nav-item
   padding-left: rhythm(1, 14px)
   border-left: 1px solid gray
+
+@media #{$tablet}
+
+  #mobile-nav-button
+    display: none
