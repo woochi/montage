@@ -34,7 +34,7 @@ Template Name: Etuivu
   
 </header>
 
-<section id="page">
+<section id="content">
   <article id="news-banner" class="featurette">
     <div class="container">
       <div class="row">

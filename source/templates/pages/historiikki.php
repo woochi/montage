@@ -43,10 +43,7 @@ Template Name: Historiikki
       </div>
       <div class="row">
         <div class="col-8 push-2">
-          <p>Kirjaan kuuluu DVD-levy, joka sisältää yhteensä 21 Montaasissa tehtyä elokuvaa kerhon koko historian ajalta. Levy tuo nähtäville paljon historiallisesti merkittävää materiaalia, josta vain pieni osa on ollut aikaisemmin esillä. Elokuvat kattavat laajan kirjon ilmaisutapoja abstraktista pohdiskelusta kuvia kumartamattomaan anarkismiin asti, mutta niistä kaikista heijastuu se kekseliäisyys ja omaehtoisen ilmaisun halu, joka on pitänyt Montaasin elinvoimaisena läpi vuosien.</p>
-
-          <p>168-sivuisen kirjan ovat toimittaneet Jussi Tarvainen, Sampo Vuorinen, Jan Wolski ja Antti Kangas. Sen graafinen suunnittelu on Vuoden kaunein kirja 2007 -voittaja Kirsti Maulan käsialaa.</p>
-
+          <p>Kirjaan kuuluu DVD-levy, joka sisältää yhteensä 21 Montaasissa tehtyä elokuvaa kerhon koko historian ajalta. Levy tuo nähtäville paljon historiallisesti merkittävää materiaalia, josta vain pieni osa on ollut aikaisemmin esillä. Elokuvista heijastuu se kekseliäisyys ja omaehtoisen ilmaisun halu, joka on pitänyt Montaasin elinvoimaisena läpi vuosien.</p>
         </div>
       </div>
     </div>

@@ -47,7 +47,7 @@ Template Name: Toiminta
         <div class="col-10 push-1 pull-1">
           <h3 class="featurette-title">Tee oma elokuva</h3>
           <p>Elokuvien tekeminen kuuluu Montaasin ydintoimintaan. Kerhossa on tehty vuosien varrella satoja lyhytelokuvia. Montaasi myös tukee jäsentensä omia elokuvatuotantoja <a href="/kalusto">kalustovuokrauksen</a> ja mahdollisen muun tuen muodossa. Mikäli olet tekemässä omaa elokuvaa ja olet halukas saamaan siihen Montaasin tukea, ota yhteyttä <a href="#main-footer">tuotantovastaavaan</a></p>
-          <a href="/elokuvat" class="alt-button-small">Lue lisää Montaasin elokuvista</a>
+          <a href="/wordpress/?page_id=450" class="alt-button-small">Lue lisää Montaasin elokuvista</a>
         </div>
     </div>
     </div>

@@ -1,4 +1,4 @@
-$button-background:   $orange
+$button-background:   $primary-color
 $button-color:        $white
 $button-color-hover:  $white
 
@@ -10,11 +10,13 @@ $button-color-hover:  $white
   border: none
   border-radius: 2px
   text-transform: uppercase
+  width: auto
+  margin: rhythm(0.5) 0
 
 .primary-button
   @extend %button
   padding: rhythm(0.5)
-  background-color: $primary-color
+  background-color: $button-background
   color: $white
 
   &:hover
@@ -31,8 +33,8 @@ $button-color-hover:  $white
   @extend %button
   +rhythm-borders(2px, 0.5)
   background-color: none
-  border-color: $primary-color
-  color: $primary-color
+  border-color: $button-background
+  color: $button-background
 
   &:hover
     border-color: $primary-dark

@@ -20,7 +20,7 @@ Template Name: Elokuvat
   <article class="tinted-featurette">
     <div class="container">
       <div class="row">
-      <p class="lead col-10 push-1 pull-1">Montaasissa on tehty vuosien varrella satoja lyhytelokuvia. Näistä valtaosa on kuvattu filmille, ja nykyäänkin Montaasissa tehdään elokuvia sekä filmille että digivideolle. Elokuvia syntyy sekä vuosittain järjestettävillä <a href="/toiminta">elokuvakursseilla</a> että niiden ulkopuolella.</p>
+      <p class="lead col-8 push-2">Montaasissa on tehty vuosien varrella satoja lyhytelokuvia. Näistä valtaosa on kuvattu filmille, ja nykyäänkin Montaasissa tehdään elokuvia sekä filmille että digivideolle. Elokuvia syntyy sekä vuosittain järjestettävillä <a href="/toiminta">elokuvakursseilla</a> että niiden ulkopuolella.</p>
       </div>
     </div>
   </article>
@@ -28,22 +28,18 @@ Template Name: Elokuvat
   <article class="featurette">
     <div class="container">
       <div class="row">
-      <div class="col-5 push-1">
+      <div class="col-8 push-2">
       <h3 class="featurette-title">Historiaa</h3>
       <p>
-        Montaasi on aina ollut ensisijaisesti tekevä elokuvakerho. Kerho perustettiin aikoinaan vastauksena tarpeeseen tuoda elokuvanteon välineet elokuvaharrastajien ulottuviin. Hyvin pian perustamisen jälkeen kerhoon hankittiin 16 mm filmikamera ja omien elokuvien tekeminen alkoi.
-      </p>
-      <p>
-        Suomessa ei 50-luvun lopulla ollut käytännössä minkäänlaista harrastajaelokuvakulttuuria, ja Montaasi oli keskeisessä asemassa sellaisen luomisessa. Ensimmäisten vuosien aikana tapahtui monta asiaa, jotka edistivät tätä suuntausta. Maan ensimmäinen virallinen elokuvataiteen opetus aloitettiin Ateneumin kamerataiteen osastolla vuonna 1959. Samaan aikaan elokuvakerholiike voimistui ja Ranskasta leviävä uusi aalto inspiroi nuoria ympäri maailmaa ryhtymään tekemään elokuvia omin neuvoin.
-      </p>
-      <p>
-        Montaasin perustajajäsenten keskuudessa vallitsi vahva ilmaisun tarve. He opiskelivat elokuvateoriaa ja harjoittelivat elokuvan tekemistä käytännössä. Pian kerhoon keskittyi vahvaa elokuvakerronnan osaamista, joka kiinnosti ulkopuolisiakin: Montaasi alkoi tehdä dokumenttielokuvia tilaustyönä mm. Teknillisen korkeakoulun ylioppilaskunnalle ja järjestää elokuvan peruskursseja, jotka joidenkin arvioiden mukaan edustivat parasta elokuvakoulutusta, jota Suomessa 60-luvun alussa tarjottiin.
+        Montaasi on aina ollut ensisijaisesti tekevä elokuvakerho. Kerho perustettiin aikoinaan vastauksena tarpeeseen tuoda elokuvanteon välineet elokuvaharrastajien ulottuviin. Pian perustamisen jälkeen kerhoon hankittiin 16 mm filmikamera ja omien elokuvien tekeminen alkoi. Kerhoon keskittyi nopeasti elokuvakerronnan osaamista, joka kiinnosti ulkopuolisiakin: Montaasi alkoi tehdä dokumenttielokuvia tilaustyönä mm. Teknillisen korkeakoulun ylioppilaskunnalle ja järjestää elokuvan peruskursseja.
       </p>
       </div>
-      <div class="col-5 pull-1">
-      <h3 class="featurette-title">Omaehtoista elokuvantekoa</h3>
+      </div>
+      <div class="row">
+      <div class="col-8 push-2">
+      <h4 class="featurette-title">Omaehtoista elokuvantekoa</h3>
       <p>
-        Omaehtoisen elokuvanteon perinne on jatkunut Montaasissa läpi vuosien. Kerhossa on tehty satoja lyhytelokuvia, jotka kattavat laajan kirjon ilmaisutapoja abstraktista kokeellisuudesta kuvia kumartamattomaan anarkismiin asti. Vaikka kerhossa tehdyt elokuvat ovatkin tekijöidensä näköisiä, ne heijastavat kirkkaasti myös omien aikojensa henkeä. Esimerkiksi sellaiset alkuvuosien teokset kuin Jaakko Ylisen kaupunkisinfonia Kaupungin omakuva (1958) ja Risto Jarvan jazzahtava 9 runoa (1959) ovat 50-luvun avant-gardea siinä missä leikkisä nuorten aikuisten ihmissuhdekuvaus Mielo (1963) kanavoi ranskalaista uutta aaltoa. 70-luvun poliittisen aktivismin kultakauden töissä otetaan rohkeasti kantaa, esimerkiksi elokuvassa Mauton pila (1972) seksin ja moraalin suhteeseen ja elokuvassa Eespäin (1974) työväenluokan asemaan. Ja kun punk tuli Suomeen 1970-luvun lopulla, se lietsoi montaasilaisissa rajojarikkovaa tee-se-itse-henkeä: syntyi mm. uusi versio Tuntemattomasta sotilaasta (1978), dokumentti legendaarisesta nuorisokeskus Lepakosta (1979) ja opetuselokuva Kiljun valmistus ja käyttö (1982). Yhtä lailla useista 90-luvun Montaasi-elokuvista ei voi olla huomaamatta senaikaisen amerikkalaisen independent-elokuvan vaikutusta.
+        Omaehtoisen elokuvanteon perinne on jatkunut Montaasissa läpi vuosien. Vaikka kerhossa tehdyt lyhytelokuvat ovatkin tekijöidensä näköisiä, ne heijastavat myös omien aikojensa henkeä. Esimerkiksi sellaiset alkuvuosien teokset kuin Kaupungin omakuva (1958) ja 9 runoa (1959) edustavat 50-luvun avant-gardea siinä missä leikkisä ihmissuhdekuvaus Mielo (1963) kanavoi Ranskan uutta aaltoa. 70-luvun poliittisen aktivismin ajan töissä otetaan rohkeasti kantaa, esimerkiksi elokuvassa Mauton pila (1972) seksin ja moraalin suhteeseen ja elokuvassa Eespäin (1974) työväenluokan asemaan. Punk-liike lietsoi montaasilaisissa rajojarikkovaa tee-se-itse-henkeä: syntyi mm. uusi versio Tuntemattomasta sotilaasta (1978), legendaarisen nuorisokeskuksen syntyä kuvaava Lepakko (1979) ja opetuselokuva Kiljun valmistus ja käyttö (1982). Sellaisissa myöhemmissä teoksissa kuin Postilaitoksen miehet (1983/2012) ja Le Shaft (2000) on videosukupolvelle ominaista raflaavuutta, ja amerikkalaisen independent-elokuvan vaikutus puolestaan näkyy lyhytelokuvissa Ei koskaan mitään pahaa (1997) ja Tulikehä (2000).
       </p>
     </div>
     </div>

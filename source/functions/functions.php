@@ -10,7 +10,7 @@ if ( ! function_exists( 'montage_enqueue_scripts' ) ) :
 function montage_enqueue_scripts() {
 	if ( ! is_admin() ) {
 		//wp_enqueue_style('montage-style', get_bloginfo( 'stylesheet_url' ));
-		wp_enqueue_script( "montage", get_template_directory_uri() . '/javascripts/theme.js');
+		//wp_enqueue_script( "montage", get_template_directory_uri() . '/javascripts/theme.js');
     wp_enqueue_style( "montage", get_stylesheet_uri());
 	}
 
@@ -39,8 +39,8 @@ function montage_setup() {
   register_post_type( 'event',
 		array(
 			'labels' => array(
-				'name' => __( 'Events' ),
-				'singular_name' => __( 'Event' )
+				'name' => __( 'Tapahtumat' ),
+				'singular_name' => __( 'Tapahtuma' )
 			),
   		'public' => true,
   		'has_archive' => true,

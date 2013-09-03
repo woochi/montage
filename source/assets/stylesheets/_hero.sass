@@ -12,6 +12,7 @@
 
   &.etusivu-hero
     background-image: url(images/hero_etusivu.png)
+    background-position: left top
   &.elokuvat-hero
     background-image: url(images/hero_elokuvat.png)
   &.jaseneksi-hero
@@ -28,8 +29,9 @@
 .hero-title-group
   clear: both
   position: absolute
-  top: rhythm(7)
+  top: rhythm(4)
   width: 100%
+  margin-left: rhythm(-1)
 
   .index-hero &
     +box-sizing(border-box)
@@ -37,8 +39,9 @@
     padding: 0 20%
 
 .hero-title
+  +adjust-font-size-to(28px, 2)
   display: inline-block
-  padding: 0 rhythm(0.5, 42px)
+  padding: 0 rhythm(0.5, 28px)
   background-color: rgba($black, 0.7)
   text-transform: uppercase
   letter-spacing: 2px
@@ -55,12 +58,39 @@
   margin-left: rhythm(-3.5)
   font-style: italic
 
+@media #{$tablet}
+
+  #hero-header.etusivu-hero
+    background-image: url(images/hero_etusivu.png)
+    background-position: center
+
+  .hero-title-group
+    top: rhythm(5)
+
+  .hero-title
+    +adjust-font-size-to(32px, 2)
+    display: inline-block
+    padding: 0 rhythm(0.5, 32px)
+
 @media #{$medium-screen}
 
   #hero-header
-    height: rhythm(10)
-
-@media #{$tablet}
-
-  #hero-header
     height: rhythm(14)
+
+  .hero-title-group
+    top: rhythm(6)
+
+  .hero-title
+    +adjust-font-size-to(38px, 2)
+    display: inline-block
+    padding: 0 rhythm(0.5, 38px)
+
+@media #{$large-screen}
+
+  .hero-title-group
+    top: rhythm(7)
+
+  .hero-title
+    +adjust-font-size-to(44px, 3)
+    display: inline-block
+    padding: 0 rhythm(0.5, 44px)

@@ -9,9 +9,6 @@
   padding: 0
   white-space: nowrap
 
-  @media #{$tablet}
-    display: block
-
   > li
     @extend %nav-item
     margin: rhythm(1, 14px) 0 rhythm(1, 14px) rhythm(0.5, 14px)
@@ -30,6 +27,22 @@
 
   .current_page_item a
     border-bottom: 2px solid $link-color
+
+#sidebar .nav-list
+  display: block
+  float: none
+
+  > li
+    display: block
+    margin: rhythm(0.5) 0
+    padding: 0 rhythm(2)
+
+  > li > a
+    color: $gray-light
+    text-transform: uppercase
+
+    &:hover
+      color: $white
 
 #logo
   @extend %nav-item
@@ -73,3 +86,6 @@
 
   #mobile-nav-button
     display: none
+
+  .nav-list
+    display: block

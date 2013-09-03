@@ -219,8 +219,8 @@ $equipment = array(
           <table id="equipment-table">
             <tr>
               <th class="col-name">Varuste</th>
-              <th class="col-name">Hinta 1 <a href="#pricing" class="price-link">(?)</a></th>
-              <th class="col-name">Hinta 2 <a href="#pricing" class="price-link">(?)</a></th>
+              <th class="col-name">H1 <a href="#pricing" class="price-link">(?)</a></th>
+              <th class="col-name">H2 <a href="#pricing" class="price-link">(?)</a></th>
             </tr>
             <?php foreach ($equipment as $item) {
                 echo '<tr class="item" rel="'.$item["category"].'"><td><h5 class="item-name">'.$item["manufacturer"].' '.$item["model"].'</h5><p class="item-description">'.$item["description"].'</p></td><td class="price-1">'.$item["price"].'</td><td class="price-2">'.$item["price2"].'</td></tr>';
@@ -257,7 +257,7 @@ $equipment = array(
         <div class="col-8 push-2">
           <h3 class="row-title">Vuokraushinnasto</h3 class="row-title">
           <p>
-            Kalustoa vuokratessa valittavana on kaksi eri hinnoittelumallia, joista <strong>Hinta 1</strong> koostuu pelkästä vuorokausivuokrasta ja on edullisin satunnaiseen tarpeeseen, kun taas <strong>Hinta 2</strong> koostuu vuoden voimassa olevasta 50 € kalustomaksusta ja halvemmista vuorokausivuokrista, ja soveltuu suurempiin tuotantoihin.
+            Kalustoa vuokratessa valittavana on kaksi eri hinnoittelumallia, joista <strong>Hinta 1 (H1)</strong> koostuu pelkästä vuorokausivuokrasta ja on edullisin satunnaiseen tarpeeseen, kun taas <strong>Hinta 2 (H2)</strong> koostuu vuoden voimassa olevasta 50 € kalustomaksusta ja halvemmista vuorokausivuokrista, ja soveltuu suurempiin tuotantoihin.
           </p>
           <p>
             Kaluston vuokraus maksetaan joko käteisellä tai etukäteen tilisiirtona (FI73 1309 3000 2152 69, viitenumero 30106), jolloin kalustoa noudettaessa tulee olla mukana kuitti tilisiirrosta.
@@ -272,11 +272,7 @@ $equipment = array(
       <div class="row">
         <div class="col-8 push-2">
           <h3 class="row-title">Varauskalenteri</h3 class="row-title">
-          <?php echo do_shortcode( '[google-calendar-events id="1" type="ajax" title="Montaasi Events"]' ); ?>
-          <ol>
-            <li>Tarkista, että kalusto ei ole varattu haluamanasi päivänä.</li>
-            <li>Lähetä varauspyyntö sähköpostilla osoitteeseen:</li>
-          </ol>
+          <?php echo do_shortcode( '[google-calendar-events id="1" type="ajax" title="Tapahtumat"]' ); ?>
         </div>
       </div>
     </div>

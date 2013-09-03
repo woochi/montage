@@ -100,7 +100,7 @@ blockquote
 
 hr
   height: 0
-  margin: rhythm(2) auto
+  margin: 0 auto
   border: none
   border-top: 1px solid $gray
 
@@ -116,3 +116,15 @@ hr
 
 .nowrap
   white-space: nowrap
+
+@media #{$tablet}
+
+  hr
+    margin: rhythm(1) auto
+
+@media #{$medium-screen}
+
+  @media #{$tablet}
+
+  hr
+    margin: rhythm(2) auto

@@ -18,6 +18,7 @@
   <div id="sidebar">
     <?php wp_nav_menu(array(
       'menu' => 'mobile-menu',
+      'menu_class' => 'mobile-menu',
       'container' => '',
       'container_id' => '',
       'items_wrap' => '<ul class="nav-list">%3$s</ul>'
