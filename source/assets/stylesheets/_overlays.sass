@@ -3,6 +3,9 @@
   left: 0
   top: 0
 
+.no-scroll
+  overflow: hidden
+
 .overlay-mask
   @extend %overlay
   z-index: $zindex-modal-backdrop
@@ -19,7 +22,8 @@
 .overlay-container
   @extend %overlay
   +transform(translateX(-50%) translateY(-50%))
-  margin: rhythm(1) 0
+  display: none
+  padding: rhythm(1) 0
   left: 50%
   top: 50%
   width: 75%
@@ -32,6 +36,7 @@
   overflow-y: scroll
 
   &.in
+    display: block
     visibility: visible
 
   &.out
@@ -42,7 +47,6 @@
   +transform(scale(0.7))
   opacity: 0
   max-height: 100%
-  overflow-y: scroll
 
   .in &
     +transform(scale(1))

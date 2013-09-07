@@ -27,9 +27,7 @@
   <section id="page">
     <nav id="header-nav" class="clear">
       <div class="container">
-        <h1 id="logo">
-          <a href="<?php echo home_url(); ?>">Montaasi</a>
-        </h1>
+        <a id="logo" href="<?php echo home_url(); ?>">Montaasi</a>
         <?php wp_nav_menu(array(
           'menu' => 'header-menu',
           'container' => '',

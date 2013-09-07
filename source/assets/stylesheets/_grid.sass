@@ -1,7 +1,6 @@
 .featurette
   overflow: hidden
-  padding: rhythm(2) 0
-  +trailing-border(1px, 2)
+  padding: rhythm(1) 0
   border-color: #f2f4f5
   background-color: $white
 
@@ -29,7 +28,6 @@
 
 %column
   +box-sizing(border-box)
-  padding: rhythm(1) 0
   min-height: 1px
 
   &:first-child
@@ -45,10 +43,7 @@
 @media #{$tablet}
 
   .featurette
-    padding: rhythm(3) 0
-
-  .row
-    margin: 0 rhythm(-0.5)
+    padding: rhythm(2) 0
 
   .container
     max-width: 728px
@@ -82,9 +77,6 @@
     padding: 0 rhythm(0.75)
 
 @media #{$large-screen}
-
-  .row
-    margin: 0 rhythm(-1)
 
   .container
     max-width: 1180px

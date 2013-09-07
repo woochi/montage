@@ -9,13 +9,21 @@ $ ->
       'msTransition': 'MSTransitionEnd'
       'transition': 'transitionend'
     transitionEndEventNames[Modernizr.prefixed('transition')]
+  animationend = ->
+    animationEndEventNames =
+      'WebkitAnimation': 'webkitAnimationEnd'
+      'MozAnimation': 'animationend'
+      'OAnimation': 'oAnimationEnd'
+      'msAnimation': 'MSAnimationEnd'
+      'animation': 'animationend'
+    animationEndEventNames[Modernizr.prefixed('animation')]
 
   closeOverlay = ->
     $mask = $(".overlay-mask")
-    $mask.toggleClass "in out"
-    $(".overlay-container.in").removeClass("in").on transitionend(), ->
+    $mask.toggleClass("in out").on animationend(), ->
       $mask.remove()
       $("body, #page").removeClass "no-scroll"
+    $(".overlay-container.in").removeClass("in")
 
   showCategory = (rel) ->
     $(".filter a").removeClass("current")

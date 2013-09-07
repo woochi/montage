@@ -46,25 +46,23 @@
 
 #logo
   @extend %nav-item
-  +adjust-font-size-to(14px, 2, 42px)
   float: left
   text-transform: uppercase
   text-indent: -9999px
   padding: 0
   margin: 11px 0
-
-  a
-    display: block
-    width: rhythm(23, 14px)
-    height: rhythm(6, 14px)
-    background: url(images/montaasi_logo.svg) 55% center no-repeat
+  display: inline-block
+  width: 160px
+  height: 60px
+  background: url(images/montaasi_logo.png) center no-repeat
+  background-size: 100% auto
 
 #mobile-nav-button
   @extend %nav-item
   +rhythm-borders(1px, 0.5, 14px)
   border: 1px solid $link-color
   border-radius: 2px
-  width: rhythm(1)
+  width: 20px
   margin: rhythm(0.75) 0
   float: right
   text-align: center

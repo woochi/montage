@@ -1,5 +1,5 @@
 $base-font-size: 15px
-$base-line-height: 25px
+$base-line-height: 26px
 
 $base-font-family: "Proxima Nova", Helvetica, Arial, sans-serif
 $alt-font-family: Georgia, serif
@@ -30,12 +30,12 @@ h2
   margin: rhythm(1, 36px) 0
 
 h3
-  +adjust-font-size-to(30px, 2)
-  margin: rhythm(0.5, 30px) 0
+  +adjust-font-size-to(30px, 1.5)
+  margin: rhythm(1, 30px) 0
 
 h4
-  +adjust-font-size-to(22px, 2)
-  margin: rhythm(0.5, 22px) 0
+  +adjust-font-size-to(22px, 1)
+  margin: rhythm(1, 22px) 0
 
 h5
   +adjust-font-size-to(18px, 1)
@@ -50,11 +50,10 @@ h6
 //-------------------------------------
 
 p
-  margin: rhythm(1) 0
+  margin: rhythm(1) 0 0
 
 .lead
-  +adjust-font-size-to(17px, 1.5)
-  margin: rhythm(1, 17px) 0
+  margin: 0
 
 .small-print
   +adjust-font-size-to(12px, 1)
@@ -81,6 +80,12 @@ a:hover
 a:active
   color: $link-color-active
 
+.primary-link
+  color: $primary-color
+
+  &:hover
+    color: darken($primary-color, 10%)
+
 .white-link
   color: rgba($white, 0.75)
   border-color: rgba($white, 0.75)
@@ -100,9 +105,9 @@ blockquote
 
 hr
   height: 0
-  margin: 0 auto
+  margin: rhythm(1) auto
   border: none
-  border-top: 1px solid $gray
+  border-top: 2px solid $gray-light
 
 .short-line
   width: rhythm(2)
@@ -117,14 +122,17 @@ hr
 .nowrap
   white-space: nowrap
 
+// Tables
+//-------------------------------------
+
+table
+  width: 100%
+
 @media #{$tablet}
 
-  hr
-    margin: rhythm(1) auto
-
-@media #{$medium-screen}
-
-  @media #{$tablet}
+  .lead
+    +adjust-font-size-to(17px, 1.25)
+    margin: 0
 
   hr
-    margin: rhythm(2) auto
+    margin: rhythm(2) auto rhythm(1) auto

@@ -1,35 +1,37 @@
 #hero-header
   +box-shadow(0 1px 0 rgba($gray, 0.5) inset, 0 -1px 0 rgba($gray, 0.5) inset)
   position: relative
-  height: rhythm(10)
-  background: $gray-dark url(images/hero_etusivu.png) center no-repeat
+  min-height: rhythm(10)
+  background-color: $gray-dark
+  background-position: center
+  background-repeat: no-repeat
   background-size: cover
   text-align: center
   color: $white
 
-  .container
-    height: 100%
-
   &.etusivu-hero
-    background-image: url(images/hero_etusivu.png)
-    background-position: left top
+    background-image: url(images/hero_etusivu.jpg)
+    background-position: 10% top
   &.elokuvat-hero
-    background-image: url(images/hero_elokuvat.png)
+    background-image: url(images/hero_elokuvat.jpg)
   &.jaseneksi-hero
-    background-image: url(images/hero_jaseneksi.png)
+    background-image: url(images/hero_jaseneksi.jpg)
+    background-position: 30% center
   &.toiminta-hero
     background-image: url(images/hero_toiminta.jpg)
+    background-position: 37% center
   &.kalusto-hero
-    background-image: url(images/hero_kalusto_2.png)
+    background-image: url(images/hero_kalusto.jpg)
   &.historiikki-hero
-    background-image: url(images/hero_historiikki.png)
+    background-image: url(images/hero_historiikki.jpg)
   &.ajankohtaista-hero
-    background-image: url(images/hero_ajankohtaista.png)
+    background-image: url(images/hero_ajankohtaista.jpg)
+    background-position: 60% center
 
 .hero-title-group
   clear: both
   position: absolute
-  top: rhythm(4)
+  top: rhythm(6)
   width: 100%
   margin-left: rhythm(-1)
 
@@ -39,7 +41,7 @@
     padding: 0 20%
 
 .hero-title
-  +adjust-font-size-to(28px, 2)
+  +adjust-font-size-to(28px, 1.5)
   display: inline-block
   padding: 0 rhythm(0.5, 28px)
   background-color: rgba($black, 0.7)
@@ -60,12 +62,12 @@
 
 @media #{$tablet}
 
-  #hero-header.etusivu-hero
-    background-image: url(images/hero_etusivu.png)
-    background-position: center
+  #hero-header
+    background-position: center !important
 
   .hero-title-group
-    top: rhythm(5)
+    margin-left: 0
+    top: rhythm(6)
 
   .hero-title
     +adjust-font-size-to(32px, 2)
@@ -78,7 +80,7 @@
     height: rhythm(14)
 
   .hero-title-group
-    top: rhythm(6)
+    top: rhythm(8)
 
   .hero-title
     +adjust-font-size-to(38px, 2)
@@ -88,9 +90,9 @@
 @media #{$large-screen}
 
   .hero-title-group
-    top: rhythm(7)
+    top: rhythm(8)
 
   .hero-title
-    +adjust-font-size-to(44px, 3)
+    +adjust-font-size-to(44px, 2.5)
     display: inline-block
     padding: 0 rhythm(0.5, 44px)

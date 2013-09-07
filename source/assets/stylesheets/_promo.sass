@@ -23,7 +23,7 @@
 
 .promo-title
   @extend %nowrap
-  margin: 0
+  margin-bottom: 0
   white-space: nowrap
   text-transform: uppercase
   color: $primary-color
@@ -47,3 +47,8 @@
   background: $gray-lighter
   border-radius: 50%
   text-align: center
+
+@media #{$tablet}
+
+  .promo-title
+    margin: 0

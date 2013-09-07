@@ -13,7 +13,6 @@ function montage_enqueue_scripts() {
 		//wp_enqueue_script( "montage", get_template_directory_uri() . '/javascripts/theme.js');
     wp_enqueue_style( "montage", get_stylesheet_uri());
 	}
-
 }
 
 endif; // montage_enqueue_scripts
@@ -22,10 +21,15 @@ add_action( 'after_setup_theme', 'montage_setup' );
 
 if ( ! function_exists( 'montage_setup' ) ) :
 
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+
 /**
 * Set up your theme here
 */
 function montage_setup() {
+  add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 	add_theme_support( 'post-thumbnails' );
 	// Switches default core markup for search form, comment form, and comments
 	// to output valid HTML5.
@@ -44,7 +48,7 @@ function montage_setup() {
 			),
   		'public' => true,
   		'has_archive' => true,
-  		'supports' => array('title', 'editor')
+  		'supports' => array('title', 'editor', 'excerpt')
 		)
 	);
 }

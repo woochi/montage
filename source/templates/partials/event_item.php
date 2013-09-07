@@ -6,7 +6,7 @@
 			</a>
 		</h4>
 		<div class="event-meta">
-		  <time><?php the_time( __( 'd/m/Y', 'montage' ) ); ?></time>
+		  <time><?php the_time( __( 'j.n.Y', 'montage' ) ); ?></time>
 		</div>
 	</header><!--end event-header-->
 	<section class="event-content">

@@ -15,8 +15,7 @@
         <h1 class="single-post-title"><?php the_title(); ?></h1>
         <br>
         <p class="single-post-meta">
-          <span class="single-single-post-author"><?php the_author(); ?></span> - 
-    	    <time><?php the_time( __( 'd/m/Y', 'montage' ) ); ?></time>
+    	    <time><?php the_time( __( 'j.n.Y', 'montage' ) ); ?></time>
         </p>
       </div>
     </div>
