@@ -42,6 +42,7 @@ Template Name: Toiminta
         <div class="col-5 push-1">
           <h4>Kaitafilmikurssi</h4>
           <p>Kaitafilmikurssi on Montaasin perinteinen elokuvanteon peruskurssi. Kurssilla käydään läpi käsikirjoittamisen, kuvakerronnan, valaisun ja kuvauksen alkeet sekä kuvataan ryhmissä lyhytelokuvat 8 mm värifilmille. Kurssi järjestetään syksyisin.</p>
+          <a class="alt-button-small" href="http://montaasi.ayy.fi/?event=kaitafilmikurssi-2013" title="Lue lisää ja osallistu vuoden 2013 kurssille.">Kaitafilmikurssi 2013</a>
         </div>
         <div class="col-5 pull-1">
           <h4>16 mm filmikurssi</h4>
