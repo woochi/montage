@@ -25,10 +25,17 @@ function custom_excerpt_length( $length ) {
 	return 20;
 }
 
+function my_wpcf7_form_elements($html) {
+    $text = 'Opiskelupaikka...';
+    $html = str_replace('<option value="">---</option>', '<option value="">' . $text . '</option>', $html);
+    return $html;
+}
+
 /**
 * Set up your theme here
 */
 function montage_setup() {
+  add_filter('wpcf7_form_elements', 'my_wpcf7_form_elements');
   add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 	add_theme_support( 'post-thumbnails' );
 	// Switches default core markup for search form, comment form, and comments

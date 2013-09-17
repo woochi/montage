@@ -44,7 +44,7 @@ Template Name: Etuivu
           $recent_posts = wp_get_recent_posts($args);
           if (count($recent_posts) > 0) {
             foreach( $recent_posts as $post ){
-    		      echo '<a href="' . get_permalink($post["ID"]).'" title="Look '.esc_attr($post["post_title"]).'" >'.$post["post_title"].'</a>';
+    		      echo '<a href="' . get_permalink($post["ID"]).'" title="Look '.esc_attr($post["post_title"]).'" >'.$post["post_title"].'</a><br>';
     	  }}
     	  ?>
     	  </div>
@@ -56,7 +56,7 @@ Template Name: Etuivu
           $recent_events = wp_get_recent_posts($args2);
           if (count($recent_events) > 0) {
             foreach( $recent_events as $event ){
-    		      echo '<a href="' . get_permalink($event["ID"]) . '" title="Look '.esc_attr($event["post_title"]).'" >'.$event["post_title"].'</a>';
+    		      echo '<a href="' . get_permalink($event["ID"]) . '" title="Look '.esc_attr($event["post_title"]).'" >'.$event["post_title"].'</a><br>';
     	    }}
     	  ?>
     	</div>

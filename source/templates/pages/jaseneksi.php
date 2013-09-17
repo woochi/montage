@@ -22,7 +22,7 @@ Template Name: Jäseneksi
       <div class="row">
         <div class="col-10 push-1 pull-1">
           <p class="lead">
-            Helpoiten Montaasin toimintaan pääsee mukaan seuraamalla <a href="/ajankohtaista" title="Mene ajankohtaista sivulle">Ajankohtaista-sivua</a> tai <a href="http://list.ayy.fi/mailman/listinfo/montaasi-lista" title="Liity Montaasin sähköpostilistalle">sähköpostilistaa</a> ja ottamalla osaa tapahtumiin. Esimerkiksi elokuvakurssit ja viikottaiset kerhoillat ovat erinomainen tapa tutustua kerhon toimintaan. Voit myös ottaa suoraan yhteyttä kerhon <a href="mailto:montaasi@list.ayy.fi" title="Lähetä sähköpostia johtokunnalle">johtokuntaan</a>.
+            Helpoiten Montaasin toimintaan pääsee mukaan seuraamalla <a href="/?page_id=467" title="Mene ajankohtaista sivulle">Ajankohtaista-sivua</a> tai <a href="http://list.ayy.fi/mailman/listinfo/montaasi-lista" title="Liity Montaasin sähköpostilistalle">sähköpostilistaa</a> ja ottamalla osaa tapahtumiin. Esimerkiksi elokuvakurssit ja viikottaiset kerhoillat ovat erinomainen tapa tutustua kerhon toimintaan. Voit myös ottaa suoraan yhteyttä kerhon <a href="mailto:montaasi@list.ayy.fi" title="Lähetä sähköpostia johtokunnalle">johtokuntaan</a>.
           </p>
         </div>
       </div>
@@ -40,12 +40,12 @@ Template Name: Jäseneksi
           <p>
             Montaasi on kaikille avoin yhdistys. Jäsenkausi on 1.9.–31.8. siten, että heinä- ja elokuussa jäseneksi tulleet saavat myös seuraavan kauden jäsenyyden samalla maksulla. Jäseneksi voit liittyä täyttämällä ohessa olevan lomakkeen ja suorittamalla jäsenmaksun Montaasin pankkitilille.
           </p>
-          <p><strong>Saat maksuohjeet ilmoittamaasi sähköpostiosoitteeseen kun olet lähettänyt hakemuksesi.</strong></p>
+          <p><strong>Saat maksuohjeet ilmoittamaasi sähköpostiosoitteeseen kun jäsenhakemuksesi on vastaanotettu.</strong></p>
           <p>
             Jäsenmaksun voi suorittaa myös käteisellä kerhohuoneella esimerkiksi
             kerhoillan yhteydessä.
           </p>
-          <h4>Jäsenmaksu vuodelle 2013: <strong>10 €</strong></h4>
+          <h4>Jäsenmaksu kaudelle 2013&mdash;2014: <strong>10 €</strong></h4>
         </div>
       </div>
     </div>
