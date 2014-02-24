@@ -13,7 +13,7 @@
     </div>
   </div>
 </footer><!--end footer-->
-</section>
+</section><!--end page-->
 
 <div class="overlay-container" id="vuokraussaannot">
 <article id="saannot" class="overlay-content">
