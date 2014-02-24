@@ -14,17 +14,17 @@ module.exports = ( grunt ) ->
         loadPath: ["bower_components/foundation/scss"]
       build:
         files:
-          "build/style.css": "app/assets/stylesheets/style.sass"
+          ".build/style.css": "app/assets/stylesheets/style.sass"
     cssmin:
       options:
         keepSpecialComments: 1
       compress:
         files:
-            'build/style.css': ['build/style.css']
+            '.build/style.css': ['.build/style.css']
     browserify:
       site:
         files:
-          "build/javascripts/theme.js": ["app/assets/javascripts/theme.coffee"]
+          ".build/javascripts/theme.js": ["app/assets/javascripts/theme.coffee"]
         options:
           transform: ["coffeeify"]
     uglify:
@@ -33,13 +33,14 @@ module.exports = ( grunt ) ->
         report: 'gzip'
       dist:
         files:
-          'build/javascripts/theme.js': 'build/javascripts/theme.js'
+          '.build/javascripts/theme.js': '.build/javascripts/theme.js'
     copy:
       build:
         files: [
-          {expand: true, flatten: true, src: ['app/templates/**'], dest: 'build/', filter: 'isFile'}
-          {expand: true, flatten: true, src: ['app/functions/**'], dest: 'build/', filter: 'isFile'}
-          {expand: true, flatten: true, cwd: "app/assets/", src: ['images/**'], dest: 'build/images', filter: "isFile"}
+          {expand: true, flatten: true, src: ['app/templates/**'], dest: '.build/', filter: 'isFile'}
+          {expand: true, flatten: true, src: ['app/functions/**'], dest: '.build/', filter: 'isFile'}
+          {expand: true, flatten: true, cwd: "app/assets/", src: ['images/**'], dest: '.build/images', filter: "isFile"}
+          {expand: true, flatten: true, cwd: "app/assets/", src: ['images/screenshot.png'], dest: '.build/'}
         ]
     watch:
       options:
@@ -53,9 +54,9 @@ module.exports = ( grunt ) ->
       php:
         files: ["app/templates/**/*.php", "app/functions/**/*.php"]
         tasks: ["copy"]
-    clean: ['build', "package"]
+    clean: ['.build', "package"]
     zip:
-      'package/package.zip': ['build/**/*']
+      'package/package.zip': ['.build/**/*']
 
   grunt.registerTask "default", ["clean", "browserify", "copy", "sass", "watch"]
   grunt.registerTask "package", ["clean", "browserify", "copy", "sass", "cssmin", "uglify", "cssmin", "uglify", "zip"]
