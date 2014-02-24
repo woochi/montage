@@ -47,7 +47,7 @@ Template Name: Etuivu
     	  }}
     	  ?>
     	  </div>
-    	  <div class="column medium-5">
+    	  <div class="column medium-5 end">
         <h5 class="promo-title">
           <a href="/?page_id=467" class="primary-link">Seuraavat tapahtumat <i class="icon-caret-right"></i></a>
         </h5>

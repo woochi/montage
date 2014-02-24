@@ -28,18 +28,6 @@
     background-image: url(images/hero_ajankohtaista.jpg)
     background-position: 60% center
 
-.hero-title-group
-  clear: both
-  position: absolute
-  top: rhythm(6)
-  width: 100%
-  margin-left: rhythm(-1)
-
-  .index-hero &
-    +box-sizing(border-box)
-    top: 30%
-    padding: 0 20%
-
 .hero-title
   +adjust-font-size-to(28px, 1.5)
   display: inline-block
@@ -61,6 +49,18 @@
   font-style: italic
 
 @media #{$medium-up}
+
+  .hero-title-group
+    clear: both
+    position: absolute
+    top: rhythm(6)
+    width: 100%
+    margin-left: rhythm(-1)
+
+    .index-hero &
+      +box-sizing(border-box)
+      top: 30%
+      padding: 0 20%
 
   #hero-header
     height: rhythm(14)
