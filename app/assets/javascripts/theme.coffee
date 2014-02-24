@@ -1,3 +1,2 @@
-#= require libs/jquery
-#= require libs/modernizr
-#= require site
+require("./libs/jquery")
+require("./site.coffee")
