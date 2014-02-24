@@ -1,10 +1,10 @@
 $input-min-width: rhythm(14)
 
 form
-  margin: rhythm(1) 0
+  @extend %default-margin
 
 fieldset
-  margin: rhythm(1) 0
+  @extend %default-margin
   padding: 0
   border: none
 
@@ -26,7 +26,7 @@ fieldset
 .select
   @extend .input
 
-@media #{$medium-screen}
+@media #{$medium-up}
 
   .input
     width: auto

@@ -1,7 +1,7 @@
-$base-font-size: 15px
-$base-line-height: 26px
+$base-font-size: 16px
+$base-line-height: 28px
 
-$base-font-family: "Proxima Nova", Helvetica, Arial, sans-serif
+$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif
 $alt-font-family: Georgia, serif
 
 $rhythm-unit: "rem"
@@ -52,9 +52,10 @@ h6
 //-------------------------------------
 
 p
-  margin: rhythm(1) 0 0
+  @extend %default-margin
 
 .lead
+  +adjust-font-size-to(18px)
   margin: 0
 
 .small-print
@@ -106,10 +107,11 @@ blockquote
 //-------------------------------------
 
 hr
+  @extend %default-margin
   height: 0
   margin: rhythm(1) auto
   border: none
-  border-top: 2px solid $gray-light
+  border-top: 1px solid $gray-lighter
 
 .short-line
   width: rhythm(2)
@@ -130,11 +132,32 @@ hr
 table
   width: 100%
 
-@media #{$tablet}
+// Lists
+//-------------------------------------
+
+ul, ol, dl
+  @extend %default-margin
+
+li
+  margin: 0 0 rhythm(0.5)
+
+%horizontal-list
+
+  li
+    display: inline-block
+
+// Images
+//-------------------------------------
+
+img
+  @extend %default-margin
+  display: inline-block
+  
+
+@media #{$medium-up}
 
   .lead
-    +adjust-font-size-to(17px, 1.25)
-    margin: 0
+    +adjust-font-size-to(18px)
 
   hr
-    margin: rhythm(2) auto rhythm(1) auto
+    margin: rhythm(2) auto

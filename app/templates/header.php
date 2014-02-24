@@ -9,6 +9,7 @@
 	name="description">
 	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
 
 	<!-- WordPress -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
