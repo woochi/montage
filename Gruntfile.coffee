@@ -17,10 +17,10 @@ module.exports = ( grunt ) ->
           "build/style.css": "app/assets/stylesheets/style.sass"
     cssmin:
       options:
-        banner: '/*! <%= pkg.name %> v<%= pkg.version %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        keepSpecialComments: 1
       compress:
         files:
-            'build/style.min.css': ['build/style.css']
+            'build/style.css': ['build/style.css']
     browserify:
       site:
         files:
@@ -33,7 +33,7 @@ module.exports = ( grunt ) ->
         report: 'gzip'
       dist:
         files:
-          'build/javascripts/theme.min.js': 'build/javascripts/theme.js'
+          'build/javascripts/theme.js': 'build/javascripts/theme.js'
     copy:
       build:
         files: [
@@ -53,6 +53,9 @@ module.exports = ( grunt ) ->
       php:
         files: ["app/templates/**/*.php", "app/functions/**/*.php"]
         tasks: ["copy"]
-    clean: ['build']
+    clean: ['build', "package"]
+    zip:
+      'package/package.zip': ['build/**/*']
 
-  grunt.registerTask "default", ["clean", "browserify", "copy", "sass", "cssmin", "uglify", "watch"]
+  grunt.registerTask "default", ["clean", "browserify", "copy", "sass", "watch"]
+  grunt.registerTask "package", ["clean", "browserify", "copy", "sass", "cssmin", "uglify", "cssmin", "uglify", "zip"]
