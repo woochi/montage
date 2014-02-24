@@ -1,7 +1,7 @@
 #hero-header
   +box-shadow(0 1px 0 rgba($gray, 0.5) inset, 0 -1px 0 rgba($gray, 0.5) inset)
   position: relative
-  min-height: rhythm(10)
+  padding: rhythm(2) 0
   background-color: $gray-dark
   background-position: center
   background-repeat: no-repeat
@@ -60,21 +60,7 @@
   margin-left: rhythm(-3.5)
   font-style: italic
 
-@media #{$tablet}
-
-  #hero-header
-    background-position: center !important
-
-  .hero-title-group
-    margin-left: 0
-    top: rhythm(6)
-
-  .hero-title
-    +adjust-font-size-to(32px, 2)
-    display: inline-block
-    padding: 0 rhythm(0.5, 32px)
-
-@media #{$small-up}
+@media #{$medium-up}
 
   #hero-header
     height: rhythm(14)
@@ -87,7 +73,7 @@
     display: inline-block
     padding: 0 rhythm(0.5, 38px)
 
-@media #{$medium-up}
+@media #{$large-up}
 
   .hero-title-group
     top: rhythm(8)

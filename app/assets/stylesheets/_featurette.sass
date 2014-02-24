@@ -1,5 +1,5 @@
 .featurette
-  padding: rhythm(2)
+  padding: rhythm(1) 0
   +trailing-border(1px, 2)
   border-color: $gray-lighter
 
@@ -15,7 +15,10 @@
 .offset-1
   margin-top: rhythm(1, 30px)
 
-@media #{$tablet}
+@media #{$medium-up}
+
+  .featurette
+    padding: rhythm(2) 0
 
   .featurette-title
     margin-top: 0

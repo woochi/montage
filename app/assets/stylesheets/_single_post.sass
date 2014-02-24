@@ -4,9 +4,6 @@
   text-align: left !important
   background-image: url(images/hero_uutinen.jpg)
 
-  .row, .column
-    height: 100%
-
 .single-post
   @extend .featurette
   border: none
@@ -29,6 +26,14 @@
 
   .single-post-hero
     padding-top: rhythm(6)
+
+    .row, .column
+      height: 100%
+
+  .single-post-title-group
+    position: absolute
+    bottom: 0
+    
 
 @media #{$large-up}
 
