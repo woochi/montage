@@ -11,6 +11,7 @@ module.exports = ( grunt ) ->
     sass:
       options:
         compass: true
+        loadPath: ["bower_components/foundation/scss"]
       build:
         files:
           "build/style.css": "app/assets/stylesheets/style.sass"
