@@ -1,0 +1,35 @@
+$sidebar-width: 260px
+
+#sidebar
+  @extend %page-part !optional
+  position: absolute
+  right: 0
+  width: $sidebar-width
+  height: 100%
+  padding: rhythm(1) 0
+  overflow: hidden
+  background-color: $black
+
+#page
+  @extend %page-part !optional
+  -webkit-transition: -webkit-transform 0.2s ease-out
+  -moz-transition: -moz-transform 0.2s ease-out
+  -o-transition: -o-transform 0.2s ease-out
+  -ms-transition: -ms-transform 0.2s ease-out
+  transition: transform 0.2s ease-out
+  +transform(translate3d(0,0,0))
+  background-color: $white
+
+  .sidebar-open &
+    +transform(translate3d(0 - $sidebar-width, 0, 0))
+
+@media #{$tablet}
+
+  #sidebar
+    display: none
+
+  #page
+    +transition(none)
+
+    .sidebar-open
+      +transform(translate3d(0,0,0))

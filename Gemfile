@@ -1,6 +1,3 @@
-source "https://rubygems.org"
-
-gem "forge", ">= 0.5.0"
-gem "compass", ">= 0.12.2"
-gem "coffee-script"
-gem "hogan_assets"
+gem "foundation"
+gem "sass", "~> 3.2.14"
+gem "compass", "~> 0.12.2"

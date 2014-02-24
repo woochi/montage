@@ -1,0 +1,36 @@
+.single-post-hero
+  position: relative
+  padding-top: rhythm(2)
+  text-align: left !important
+  background-image: url(images/hero_uutinen.jpg)
+
+  .row, .column
+    height: 100%
+
+.single-post
+  @extend .featurette
+  border: none
+  background: $white
+
+.single-post-meta
+  display: inline-block
+  margin: rhythm(0.5) 0 0
+  padding: 0 rhythm(0.5)
+  background: rgba($black, 0.7)
+
+.single-post-title
+  @extend .hero-title
+  display: inline
+  margin: rhythm(2) 0 0
+  padding: 0 rhythm(0.5, 44px)
+  background: rgba($black, 0.7)
+
+@media #{$medium-up}
+
+  .single-post-hero
+    padding-top: rhythm(6)
+
+@media #{$large-up}
+
+  .single-post-hero
+    padding-top: rhythm(6)

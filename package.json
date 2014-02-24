@@ -1,0 +1,28 @@
+{
+  "name": "Montage",
+  "description": "",
+  "contributors": [
+    "Mikko Kivelä <mikko.s.kivela@aalto.fi>"
+  ],
+  "devDependencies": {
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-coffee": "*",
+    "matchdep": "*",
+    "grunt-express-server": "*",
+    "connect-assets": "*",
+    "grunt-contrib-copy": "~0.4.1",
+    "browserify": "*",
+    "grunt-browserify": "*",
+    "browserify-shim": "*",
+    "coffeeify": "*",
+    "grunt-contrib-jade": "*",
+    "simple-jadeify": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-clean": "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "*"
+  }
+}

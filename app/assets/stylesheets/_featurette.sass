@@ -1,0 +1,21 @@
+.featurette
+  padding: rhythm(2)
+  +trailing-border(1px, 2)
+  border-color: $gray-lighter
+
+.tinted-featurette
+  @extend .featurette
+
+.featurette p:last-child
+  margin-bottom: 0
+
+.featurette-title
+  margin-top: 0
+
+.offset-1
+  margin-top: rhythm(1, 30px)
+
+@media #{$tablet}
+
+  .featurette-title
+    margin-top: 0
