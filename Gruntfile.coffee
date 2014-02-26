@@ -59,4 +59,4 @@ module.exports = ( grunt ) ->
       'package/package.zip': ['build/**/*']
 
   grunt.registerTask "default", ["clean", "browserify", "copy", "sass", "watch"]
-  grunt.registerTask "package", ["clean", "browserify", "copy", "sass", "cssmin", "uglify", "cssmin", "uglify", "zip"]
+  grunt.registerTask "package", ["clean", "browserify", "copy", "sass", "cssmin", "uglify", "zip"]
