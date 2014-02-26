@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 
 <header id="hero-header" class="ajankohtaista-hero">
-  <div class="container">
-    <hgroup class="hero-title-group">
-      <h1 class="hero-title">Ajankohtaista</h1>
-    </hgroup>
+  <div class="row">
+    <div class="column medium-12">
+      <hgroup class="hero-title-group">
+        <h1 class="hero-title">Ajankohtaista</h1>
+      </hgroup>
+    </div>
   </div>
 </header>
 

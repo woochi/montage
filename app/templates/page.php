@@ -15,21 +15,17 @@
 ?>
 
 <header id="hero-header" class="elokuvat-hero" style="<?php echo $style; ?>">
-
-  <div class="container">
-    <hgroup class="hero-title-group">
-      <h1 class="hero-title"><?php the_title(); ?></h1>
-    </hgroup>
+  <div class="row">
+    <div class="column medium-12">
+      <hgroup class="hero-title-group">
+        <h1 class="hero-title"><?php the_title(); ?></h1>
+      </hgroup>
+    </div>
   </div>
-  
 </header>
 
-
 <section id="content">
-  
-
-      <?php the_content(); ?>
-
+  <?php the_content(); ?>
 </section>
 
 <?php endwhile; ?>

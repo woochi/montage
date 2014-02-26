@@ -23,13 +23,13 @@ Template Name: Etuivu
 ?>
 
 <header id="hero-header" class="etusivu-hero">
-
-  <div class="container">
-    <hgroup class="hero-title-group">
-      <h1 class="hero-title">Montaasi</h1>
-    </hgroup>
+  <div class="row">
+    <div class="column medium-12">
+      <hgroup class="hero-title-group">
+        <h1 class="hero-title">Montaasi</h1>
+      </hgroup>
+    </div>
   </div>
-  
 </header>
 
 <section id="content">
