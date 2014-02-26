@@ -1,6 +1,20 @@
 <?php get_header(); ?>
 
-<header id="hero-header" class="elokuvat-hero">
+<?php if ( have_posts() ) : ?>
+  	<?php while ( have_posts() ) : the_post(); ?>
+
+<?php
+
+  $hero_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+  if (!$hero_url) {
+    $style = "";
+  } else {
+    $style = "background-image: url(".$hero_url.");";
+  }
+
+?>
+
+<header id="hero-header" class="elokuvat-hero" style="<?php echo $style; ?>">
 
   <div class="container">
     <hgroup class="hero-title-group">
@@ -12,13 +26,13 @@
 
 
 <section id="content">
-  <?php if ( have_posts() ) : ?>
-  	<?php while ( have_posts() ) : the_post(); ?>
+  
 
       <?php the_content(); ?>
 
-  	<?php endwhile; ?>
-  <?php endif; ?>
 </section>
+
+<?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>
