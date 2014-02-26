@@ -13,7 +13,7 @@ fieldset
     padding: 0
 
     > li
-      margin: rhythm(0.5) 0
+      margin: 0 rhythm(0.5)
 
 .input
   +box-sizing(border-box)
@@ -25,6 +25,12 @@ fieldset
 
 .select
   @extend .input
+  cursor: pointer
+  background: url("images/select_arrow.png") 95% 50% no-repeat
+  background-size: 12px 8px
+
+  &:hover
+    background-image: url("images/select_arrow_hover.png")
 
 @media #{$medium-up}
 
