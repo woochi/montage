@@ -64,7 +64,8 @@
 </article>
 </div>
 
-<script src="<?php bloginfo("template_directory"); ?>/javascripts/theme.js"></script>
+<script src="<?php bloginfo("template_directory"); ?>/javascripts/jquery.js" defer></script>
+<script src="<?php bloginfo("template_directory"); ?>/javascripts/theme.js" defer></script>
 <?php wp_footer(); ?>
 </body>
 </html>
