@@ -57,6 +57,9 @@ module.exports = ( grunt ) ->
     clean: ['build', "package"]
     zip:
       'package/package.zip': ['build/**/*']
+    bower:
+      build:
+        dest: "build/javascripts"
 
-  grunt.registerTask "default", ["clean", "browserify", "copy", "sass", "watch"]
-  grunt.registerTask "package", ["clean", "browserify", "copy", "sass", "cssmin", "uglify", "zip"]
+  grunt.registerTask "default", ["clean", "bower", "browserify", "copy", "sass", "watch"]
+  grunt.registerTask "package", ["clean", "bower", "browserify", "copy", "sass", "cssmin", "uglify", "zip"]
