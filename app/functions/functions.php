@@ -32,11 +32,11 @@ function my_wpcf7_form_elements($html) {
 }
 
 function featurette($attrs, $content = null) {
-   extract(shortcode_atts(array('columns' => '8'), $atts));
-   $html = "<div class='featurette'><div class='row'>" .
+   extract(shortcode_atts(array('columns' => '8'), $attrs));
+   $html = "<article class='featurette'><div class='row'>" .
             "<div class='column medium-".$columns." medium-centered'>" .
             do_shortcode($content) .
-            "</div></div></div>";
+            "</div></div></article>";
    return $html;
 }
 
