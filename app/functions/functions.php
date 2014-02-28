@@ -31,6 +31,19 @@ function my_wpcf7_form_elements($html) {
     return $html;
 }
 
+function featurette($attrs, $content = null) {
+   extract(shortcode_atts(array('columns' => '8'), $atts));
+   $html = "<div class='featurette'><div class='row'>" .
+            "<div class='column medium-".$columns." medium-centered'>" .
+            do_shortcode($content) .
+            "</div></div></div>";
+   return $html;
+}
+
+function create_shortcodes() {
+  add_shortcode('featurette', 'featurette');
+}
+
 /**
 * Set up your theme here
 */
@@ -38,6 +51,7 @@ function montage_setup() {
   add_filter('wpcf7_form_elements', 'my_wpcf7_form_elements');
   add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 	add_theme_support( 'post-thumbnails' );
+
 	// Switches default core markup for search form, comment form, and comments
 	// to output valid HTML5.
 	add_theme_support( 'html5', array(
@@ -45,6 +59,10 @@ function montage_setup() {
 	  'comment-form',
 	  'comment-list' ));
 
+	// Support different post types, specifically video types for movie posts.
+	add_theme_support( 'post-formats', array( 'video' ) );
+
+  // Register default navigation menus
   register_nav_menu('header-menu',__( 'Header Menu' ));
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
   register_nav_menu('mobile-menu',__( 'Mobile Menu' ));
@@ -61,6 +79,9 @@ function montage_setup() {
   		'supports' => array('title', 'editor', 'excerpt')
 		)
 	);
+
+  // Create featurette shortcodes
+	create_shortcodes();
 }
 
 endif; // montage_setup
