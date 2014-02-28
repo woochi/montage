@@ -40,8 +40,17 @@ function featurette($attrs, $content = null) {
    return $html;
 }
 
+function column($attrs, $content = null) {
+   extract(shortcode_atts(array('span' => '12'), $attrs));
+   $html = "<div class='column medium-".$span."'>" .
+            do_shortcode($content) .
+            "</div>";
+   return $html;
+}
+
 function create_shortcodes() {
   add_shortcode('featurette', 'featurette');
+  add_shortcode('column', 'column');
 }
 
 /**
