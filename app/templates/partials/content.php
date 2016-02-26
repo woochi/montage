@@ -21,7 +21,7 @@
 
 <header id="hero-header" class="single-post-hero" style="<?php echo $style; ?>">
   <div class="row">
-    <div class="column small-12 medium-8 medium-centered">
+    <div class="column small-12 medium-8 medium-centered single-post-hero-content">
       <div class="single-post-title-group">
         <h1 class="single-post-title"><?php the_title(); ?></h1>
         <br>

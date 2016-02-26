@@ -11,7 +11,7 @@ module.exports = ( grunt ) ->
     sass:
       options:
         compass: true
-        loadPath: ["bower_components/foundation/scss"]
+        loadPath: ["node_modules/foundation-sites/scss"]
       build:
         files:
           "build/style.css": "app/assets/stylesheets/style.sass"
@@ -60,6 +60,16 @@ module.exports = ( grunt ) ->
     bower:
       build:
         dest: "build/javascripts"
+    rsync:
+      production:
+        options:
+          src: "build/"
+          dest: "/home/montaasi/www-data/wp-content/themes/montage"
+          host: "montaasi@otax.ayy.fi"
+          recursive: true
+          delete: true
 
   grunt.registerTask "default", ["clean", "bower", "browserify", "copy", "sass", "watch"]
   grunt.registerTask "package", ["clean", "bower", "browserify", "copy", "sass", "cssmin", "uglify", "zip"]
+  grunt.registerTask "build", ["clean", "bower", "browserify", "copy", "sass", "cssmin", "uglify"]
+  grunt.registerTask "deploy", ["build", "rsync:production"]
