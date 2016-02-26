@@ -4,10 +4,10 @@
 	<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
 		<div class="pagination index">
 			<div class="alignleft">
-				<?php previous_posts_link( __( '&larr; Newer entries', 'montage' )); ?>
+				<?php previous_posts_link( __( '&larr; Uudemmat uutiser', 'montage' )); ?>
 			</div>
 			<div class="alignright">
-				<?php next_posts_link( __( 'Older entries &rarr;', 'montage' )); ?>
+				<?php next_posts_link( __( 'Vanhemmat uutiset &rarr;', 'montage' )); ?>
 			</div>
 		</div><!--end pagination-->
 	<?php else : ?>
