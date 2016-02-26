@@ -9,13 +9,13 @@ Template Name: Etuivu
 <?php
 
     $args = array(
-      'numberposts' => 2,
+      'numberposts' => 3,
       'post_status' => 'publish',
       'post_type' => 'post',
       'suppress_filters' => true );
 
     $args2 = array(
-      'numberposts' => 2,
+      'numberposts' => 3,
       'post_status' => 'publish',
       'post_type' => 'event',
       'suppress_filters' => true );
