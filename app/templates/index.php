@@ -12,13 +12,9 @@
 
 <section id="content" class="featurette">
   <div class="row">
-    <div class="column medium-6">
+    <div class="column medium-12">
       <h5 class="event-col-title">Uutiset</h5>
       <?php get_template_part( 'loop' ); ?>
-    </div>
-    <div class="column medium-6">
-      <h5 class="event-col-title">Tulevat tapahtumat</h5>
-      <?php get_template_part( 'event_loop' ); ?>
     </div>
   </div>
 </section>
