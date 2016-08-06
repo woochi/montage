@@ -53,10 +53,19 @@ function create_shortcodes() {
   add_shortcode('column', 'column');
 }
 
+function my_post_count_queries( $query ) {
+  if (!is_admin() && $query->is_main_query()){
+    if(is_home()){
+       $query->set('posts_per_page', 1);
+    }
+  }
+}
+
 /**
 * Set up your theme here
 */
 function montage_setup() {
+  add_action( 'pre_get_posts', 'my_post_count_queries' );
   add_filter('wpcf7_form_elements', 'my_wpcf7_form_elements');
   add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 	add_theme_support( 'post-thumbnails' );
