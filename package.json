@@ -5,11 +5,11 @@
     "Mikko Kivelä <mikko.s.kivela@aalto.fi>"
   ],
   "devDependencies": {
-    "browserify": "*",
+    "browserify": "^13.1.0",
     "browserify-shim": "*",
     "coffeeify": "*",
     "connect-assets": "*",
-    "foundation-sites": "^6.1.2",
+    "foundation-sites": "^6.2.3",
     "grunt": "~0.4.1",
     "grunt-bower": "*",
     "grunt-browserify": "*",
@@ -19,7 +19,7 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jade": "*",
-    "grunt-contrib-sass": "^0.7.1",
+    "grunt-contrib-sass": "^0.8.0",
     "grunt-contrib-stylus": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "~0.5.3",
@@ -27,10 +27,9 @@
     "grunt-rsync": "^1.0.1",
     "grunt-zip": "*",
     "matchdep": "*",
-    "simple-jadeify": "*"
+    "simple-jadeify": "^1.0.0"
   },
   "dependencies": {
-    "browserify": "^13.0.0",
     "jquery": "^2.2.1",
     "parse-js": "^0.2.3",
     "process": "^0.11.2"
